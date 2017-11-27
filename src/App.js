@@ -47,7 +47,14 @@ class App extends Component {
 
 
 
-
+  _toggleAuthButton() {
+    if (this.state.currentUser) {
+      return <LogoutButton />
+    }
+    else {
+      return <LoginButton />
+    }
+  }
 
 
 
@@ -63,8 +70,7 @@ class App extends Component {
               <h1 className="title">Nutrition App</h1>
               <NavLink className="navlink" exact to= '/'>Home</NavLink>
               <NavLink className="navlink" to= '/foodlist'>Food List</NavLink>
-              <LoginButton />
-              <LogoutButton />
+              {this._toggleAuthButton()}
 
 
             </nav>
