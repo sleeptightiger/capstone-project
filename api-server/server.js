@@ -16,14 +16,19 @@ app.use(morgan('combined'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 
 
 
 
-app.get('/food/:q', (req, res) => {
-  let query = req.params.q;
-  const url = `https://trackapi.nutritionix.com/v2/search/instant?query=${query}`;
+
+app.get('/food', (req, res) => {
+  // let query = req.params.q;
+  const url = `https://trackapi.nutritionix.com/v2/search/instant?query=chicken`;
   axios.get(url, {
     headers: {
       'x-app-id': process.env.NUTRITION_APP_ID,
@@ -32,12 +37,24 @@ app.get('/food/:q', (req, res) => {
     }
   })
   .then((response) => {
-    res.status(200).send(response.data.common);
+    res.status(200).send(response.data);
   })
   .catch((err) => {
     res.status(400).send('Error:', err);
   })
 })
+
+// app.get('/', (req, res) => {
+//   // let query = req.params.q;
+//   const url = 'http://api.icndb.com/jokes/random';
+//   axios.get(url)
+//   .then((response) => {
+//     res.status(200).json(response.data);
+//   })
+//   .catch((err) => {
+//     res.status(400).json('Error:', err);
+//   })
+// })
 
 
 
