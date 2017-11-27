@@ -3,11 +3,11 @@ require('dotenv').config();
 
 // Provided by the Firebase console
 const config = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  databaseURL: process.env.REACT_APP_DATABASE_URL,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
+  apiKey: 'AIzaSyDJLsxOaurSxuKNPR0dGc_UrIhoUUJc0sw',
+  authDomain: 'wdi-capstone-12312.firebaseapp.com',
+  databaseURL: 'https://wdi-capstone-12312.firebaseio.com',
+  storageBucket: 'wdi-capstone-12312.appspot.com',
+  messagingSenderId: '713926193149'
 };
 
 // Firebase instance
