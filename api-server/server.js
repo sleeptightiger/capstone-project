@@ -81,19 +81,23 @@ app.get('/natural', (req, res) => {
       console.log(err);
     });
 
+
 })
 
-var json = require('./json/chickenList.json');
-
-app.get('/test', (req, res) => {
-  var x = []
-  for (let i = 0; i < json.foods.length; i++) {
-    x.push(json.foods[i]);
+var chickenList = require('./json/chickenList.json');
+var beefList = require('./json/groundBeefList.json');
+app.get('/chickenList', (req, res) => {
+  let jsonFile = []
+  for (let i = 0; i < chickenList.foods.length; i++) {
+    jsonFile.push(chickenList.foods[i]);
   }
-
-  res.json(x)
-
-
+  res.json(jsonFile)
+}).get('/beefList', (req, res) => {
+  let jsonFile = []
+  for (let i = 0; i < beefList.foods.length; i++) {
+    jsonFile.push(beefList.foods[i]);
+  }
+  res.json(jsonFile)
 })
 
 

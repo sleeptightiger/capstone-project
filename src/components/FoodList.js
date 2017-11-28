@@ -16,64 +16,83 @@ class FoodList extends Component {
   }
 
 
+  // _getFoodResults(e) {
+  //   e.preventDefault();
+  //   let searchTerm = this.searchBox.value
+  //   fetch(`/instantSearch/${searchTerm}`)
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     console.log(data.branded)
+  //     this._getNutritionInfoId(data.branded)
+  //     this.setState({
+  //       food: data.branded
+  //     })
+  //   })
+  // }
+
+
   _getFoodResults(e) {
     e.preventDefault();
     let searchTerm = this.searchBox.value
-    fetch(`/instantSearch/${searchTerm}`)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.branded)
-      this._getNutritionInfoId(data.branded)
-      this.setState({
-        food: data.branded
+    if (searchTerm === 'chicken' || searchTerm === 'beef' || searchTerm === 'ground beef') {
+      let fetchUrl = '';
+      if (searchTerm === 'chicken') {
+        fetchUrl = 'chickenList'
+      }
+      if (searchTerm === 'beef' || searchTerm === 'ground beef') {
+        fetchUrl = 'beefList'
+      }
+      fetch(`/${fetchUrl}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log('Data', data)
+        // this._getNutritionInfoId(data.branded)
+        this.setState({
+          food: data
+        })
       })
-    })
+    }
+    else {
+      fetch(`/instantSearch/${searchTerm}`)
+        .then((res) => res.json())
+        .then((data) => {
+          this.setState({
+            food: data.branded
+          })
+        })
+    }
+
   }
 
 
-   _getNutritionInfoId(data) {
-    let nutritionInfoId = data.map((data, i) => {
-      return data.nix_item_id;
-    })
-    console.log(nutritionInfoId);
-  }
-
-  // _getNutrients(data) {
-  //   let foodInfo = [];
-  //   let nutrients = data.map((data, i) => {
+  // _getNutritionInfoId(data) {
+  //   let nutritionInfoId = data.map((data, i) => {
   //     return data.nix_item_id;
   //   })
-  //   let nix_id = nutrients;
-  //   // console.log(nix_id)
-  //   let doYaThang = nix_id.map((data, i) => {
-  //     // console.log('Data:', data);
-  //     fetch(`/nutrients/${data}`, {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     })
-  //     .then((res) => res.json())
-  //     .then((responseData) => {
-  //       // console.log(responseData.foods[0].food_name)
-  //       foodInfo.push(responseData.foods[0].food_name);
-  //       return responseData.foods[0].food_name;
-  //     })
-  //   })
-  //   this.setState({
-  //     food: foodInfo
-  //   })
-  //   console.log('Doya', doYaThang)
-  //   console.log('Food Info!', this.state.food)
+  //   console.log(nutritionInfoId);
   // }
+
 
   render() {
 
     var mapped = this.state.food.map((data, index) => {
       let food = this.state.food[index];
+      for (var key in food) {
+        if (food.hasOwnProperty(key)) {
+          if (food[key] === null) {
+            food[key] = 0;
+          }
+        }
+      }
       return (
         <div key={index} className="results">
           <h1>{_.startCase(food.food_name)}</h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
-          <p>Calories: {food.nf_calories}</p>
+          <p>Calories: {food.nf_calories || 0}</p>
+          <p>Protein: {food.nf_protein || 0}</p>
+          <p>Carbohydrates: {food.nf_total_carbohydrate || 0}</p>
+          <p>Fat: {food.nf_total_fat || 0}</p>
+
         </div>
       )
     })
