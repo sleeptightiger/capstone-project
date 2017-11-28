@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import _ from 'lodash';
 
+import axios from 'axios'
+
 // import { database } from '../utils/firebase.js';
 
 class FoodList extends Component {
@@ -14,22 +16,6 @@ class FoodList extends Component {
 
     this._getFoodResults = this._getFoodResults.bind(this);
   }
-
-
-  // _getFoodResults(e) {
-  //   e.preventDefault();
-  //   let searchTerm = this.searchBox.value
-  //   fetch(`/instantSearch/${searchTerm}`)
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     console.log(data.branded)
-  //     this._getNutritionInfoId(data.branded)
-  //     this.setState({
-  //       food: data.branded
-  //     })
-  //   })
-  // }
-
 
   _getFoodResults(e) {
     e.preventDefault();
@@ -45,7 +31,7 @@ class FoodList extends Component {
       fetch(`/${fetchUrl}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log('Data', data)
+        // console.log('Data', data)
         // this._getNutritionInfoId(data.branded)
         this.setState({
           food: data
@@ -72,6 +58,37 @@ class FoodList extends Component {
   //   console.log(nutritionInfoId);
   // }
 
+_addItem(e) {
+  let surroundingDiv = e.target.parentNode.parentNode.childNodes
+
+  let storedValues = []
+  surroundingDiv.forEach((element) => {
+    // console.log(element.textContent)
+    storedValues.push(element.textContent)
+  })
+
+  let parsedValues = []
+  parsedValues.push(storedValues[0]);
+  let unitString = JSON.stringify(storedValues[1].split(':').splice(1,1));
+  unitString = unitString.split(' ');
+  parsedValues.push(unitString[1]);
+  parsedValues.push(unitString[2].replace(/"]/i, ''));
+
+  for (let i = 2; i < storedValues.length; i++) {
+    let addString = storedValues[i].split(': ')
+    parsedValues.push(addString[1]);
+  }
+  axios.post('/test', {
+    data: parsedValues
+  })
+  .then((res) => {
+    console.log('submitted successfully');
+  })
+  .catch((err) => {
+    console.log('error while posting', err);
+  })
+
+}
 
   render() {
 
@@ -86,13 +103,12 @@ class FoodList extends Component {
       }
       return (
         <div key={index} className="results">
-          <h1>{_.startCase(food.food_name)}</h1>
+          <h1>{_.startCase(food.food_name)}<i onClick={this._addItem} className="fa fa-plus" aria-hidden="true"></i></h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
           <p>Calories: {food.nf_calories || 0}</p>
           <p>Protein: {food.nf_protein || 0}</p>
           <p>Carbohydrates: {food.nf_total_carbohydrate || 0}</p>
           <p>Fat: {food.nf_total_fat || 0}</p>
-
         </div>
       )
     })

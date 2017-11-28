@@ -56,7 +56,8 @@
 }
 
 .results {
-  text-align: center;
+  text-align: left;
+  margin-left: 90px;
 }
 
 .results p {
@@ -64,7 +65,11 @@
   font-size: 20px;
 }
 
-
+.fa {
+  padding-left: 20px;
+  cursor: pointer;
+  color: #1E88E5;
+}
 
 
 
