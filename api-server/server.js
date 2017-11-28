@@ -6,6 +6,16 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 
+var NutritionixClient = require('nutritionix');
+
+
+var nutritionix = new NutritionixClient({
+    appId: process.env.NUTRITION_APP_ID,
+    appKey: process.env.NUTRITION_APP_KEY
+    // debug: true, // defaults to false
+});
+
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -17,9 +27,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', '*',);
   next();
 });
+
 
 
 
@@ -43,6 +54,28 @@ app.get('/food/:q', (req, res) => {
     res.status(400).send('Error:', err);
   })
 })
+
+
+
+app.get('/natural', (req, res) => {
+
+  var ingredients = [
+  '3 oz beef'
+];
+
+  nutritionix.natural(ingredients.join('\n'))
+    .then((successHandler, errorHandler) => {
+      console.log(successHandler)
+      res.status(200).send(successHandler);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+})
+
+
+
 
 
 
