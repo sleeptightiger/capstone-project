@@ -2,32 +2,32 @@ const express = require('express');
 const axios = require('axios');
 const morgan = require('morgan')
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const NutritionixClient = require('nutritionix');
 
 require('dotenv').config();
-
-
-var NutritionixClient = require('nutritionix');
-
-
-var nutritionix = new NutritionixClient({
-    appId: process.env.NUTRITION_APP_ID,
-    appKey: process.env.NUTRITION_APP_KEY
-    // debug: true, // defaults to false
-});
 
 
 const app = express();
 const port = process.env.PORT || 3001;
 
+const db = require('./db/connection.js');
+
+
 // Log HTTP Requests
 app.use(morgan('combined'))
-
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*',);
   next();
+});
+
+
+
+var nutritionix = new NutritionixClient({
+  appId: process.env.NUTRITION_APP_ID,
+  appKey: process.env.NUTRITION_APP_KEY
 });
 
 
@@ -100,7 +100,18 @@ app.get('/chickenList', (req, res) => {
   res.json(jsonFile)
 })
 
+app.get('/test', (req, res) => {
+  res.send('Working');
+  let awesome_instance = new db.Food({
+    name: 'it worked'
+  })
 
+  awesome_instance.save((err) => {
+    if (err) {
+      console.log('Error:', err);
+    }
+  })
+})
 
 
 
