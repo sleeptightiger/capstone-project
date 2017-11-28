@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const NutritionixClient = require('nutritionix');
 
+const _ = require('lodash');
+
 require('dotenv').config();
 
 
@@ -100,17 +102,24 @@ app.get('/chickenList', (req, res) => {
   res.json(jsonFile)
 })
 
-app.get('/test', (req, res) => {
-  res.send('Working');
-  let awesome_instance = new db.Food({
-    name: 'it worked'
+app.post('/test', (req, res) => {
+  let getBody = req.body.data;
+
+  let nutrtionFacts = new db.Food({
+    name: getBody[0],
+    servingSize: getBody[1],
+    unit: getBody[2],
+    calories: getBody[3],
+    protein: getBody[4],
+    carbohydrates: getBody[5],
+    fat: getBody[6]
   })
 
-  awesome_instance.save((err) => {
-    if (err) {
-      console.log('Error:', err);
-    }
-  })
+  nutrtionFacts.save().then((data) => {
+    res.status(201).send(data);
+  }).catch((err) => {
+    res.status(400).send();
+  });
 })
 
 
