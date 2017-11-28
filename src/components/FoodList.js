@@ -67,21 +67,21 @@ class FoodList extends Component {
     })
     let nix_id = nutrients;
     console.log(nix_id)
-    let doYaThang = nix_id.map((data, i) => {
-      console.log('Data:', data);
-      fetch(`/nutrients/${data}`, {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      })
-      .then((res) => res.json())
-      .then((responseData) => {
-        foodInfo.push(responseData.foods[0].food_name);
-      })
-      this.setState({
-        food: foodInfo
-      })
-      console.log('Food Info!', this.state.food)
-    })
+    // let doYaThang = nix_id.map((data, i) => {
+    //   console.log('Data:', data);
+    //   fetch(`/nutrients/${data}`, {
+    //     'Content-Type': 'application/json',
+    //     'Accept': 'application/json'
+    //   })
+    //   .then((res) => res.json())
+    //   .then((responseData) => {
+    //     foodInfo.push(responseData.foods[0].food_name);
+    //   })
+    //   this.setState({
+    //     food: foodInfo
+    //   })
+    //   console.log('Food Info!', this.state.food)
+    // })
   }
 
   render() {
