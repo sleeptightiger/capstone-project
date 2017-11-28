@@ -1,0 +1,1270 @@
+{
+    "foods": [
+        {
+            "food_name": "Boneless Skinless Chicken Breast",
+            "brand_name": "Smart Chicken",
+            "serving_qty": 4,
+            "serving_unit": "ounces",
+            "serving_weight_grams": 112,
+            "nf_calories": 120,
+            "nf_total_fat": 1,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": 65,
+            "nf_sodium": 50,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 26,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 26
+                },
+                {
+                    "attr_id": 204,
+                    "value": 1
+                },
+                {
+                    "attr_id": 208,
+                    "value": 120
+                },
+                {
+                    "attr_id": 307,
+                    "value": 50
+                },
+                {
+                    "attr_id": 601,
+                    "value": 65
+                }
+            ],
+            "nix_brand_name": "Smart Chicken",
+            "nix_brand_id": "548f0b98e1928e5266156716",
+            "nix_item_name": "Boneless Skinless Chicken Breast",
+            "nix_item_id": "58884dea681cfca97f37e367",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58884e56c05d8acd3bd5723f.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-01-25T07:04:14+00:00",
+            "nf_ingredient_statement": null
+        },
+
+        {
+            "food_name": "Chasseur One Pan Sauce",
+            "brand_name": "Chicken Tonight",
+            "serving_qty": 0.25,
+            "serving_unit": "jar",
+            "serving_weight_grams": null,
+            "nf_calories": 63.77,
+            "nf_total_fat": 3.8,
+            "nf_saturated_fat": 0.5,
+            "nf_cholesterol": null,
+            "nf_sodium": 320,
+            "nf_total_carbohydrate": 5.8,
+            "nf_dietary_fiber": 1.4,
+            "nf_sugars": 3.8,
+            "nf_protein": 1,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 1
+                },
+                {
+                    "attr_id": 204,
+                    "value": 3.8
+                },
+                {
+                    "attr_id": 205,
+                    "value": 5.8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 63.77
+                },
+                {
+                    "attr_id": 269,
+                    "value": 3.8
+                },
+                {
+                    "attr_id": 291,
+                    "value": 1.4
+                },
+                {
+                    "attr_id": 307,
+                    "value": 320
+                },
+                {
+                    "attr_id": 606,
+                    "value": 0.5
+                }
+            ],
+            "nix_brand_name": "Chicken Tonight",
+            "nix_brand_id": "5755d0de524f549e5967883f",
+            "nix_item_name": "Chasseur One Pan Sauce",
+            "nix_item_id": "5761b53dab47cf2719aef87f",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/576dbf4196dcdc0c3fc19844.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-06-24T23:11:32+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Chicken Fettuccine Alfredo",
+            "brand_name": "Chicken Helper",
+            "serving_qty": 0.5,
+            "serving_unit": "cup as pkgd",
+            "serving_weight_grams": 39,
+            "nf_calories": 140,
+            "nf_total_fat": 1.5,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 520,
+            "nf_total_carbohydrate": 27,
+            "nf_dietary_fiber": 0.5,
+            "nf_sugars": 2,
+            "nf_protein": 4,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 4
+                },
+                {
+                    "attr_id": 204,
+                    "value": 1.5
+                },
+                {
+                    "attr_id": 205,
+                    "value": 27
+                },
+                {
+                    "attr_id": 208,
+                    "value": 140
+                },
+                {
+                    "attr_id": 269,
+                    "value": 2
+                },
+                {
+                    "attr_id": 291,
+                    "value": 0.5
+                },
+                {
+                    "attr_id": 303,
+                    "value": 0.72
+                },
+                {
+                    "attr_id": 307,
+                    "value": 520
+                }
+            ],
+            "nix_brand_name": "Chicken Helper",
+            "nix_brand_id": "51db37e7176fe9790a89a709",
+            "nix_item_name": "Chicken Fettuccine Alfredo",
+            "nix_item_id": "51c3623697c3e69de4b02f0d",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/587dc41fd48f37be4a09ab74.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-01-17T07:07:40+00:00",
+            "nf_ingredient_statement": "Enriched Pasta (Wheat Flour, Niacin, Ferrous Sulfate, Thiamin Mononitrate, Riboflavin, Folic Acid), Corn Starch, Salt, Enriched Flour (Wheat Flour, Niacin, Iron, Thiamin Mononitrate, Riboflavin, Folic Acid), Monosodium Glutamate, Sea Salt, Parmesan Cheese (Dried) (Part Skim Milk, Cheese Cultures, Salt, Enzymes), Modified Whey, Partially Hydrogenated Soybean Oil, Whey (Dried), Corn Syrup (Dried), Artificial Color, Monoglycerides, Buttermilk (Dried), Parsley Flakes, Citric Acid, Yeast Extract, Sodium Caseinate, Sodium Phosphate, Spice, Natural and Artificial Flavor, Silicon Dioxide (Anti-Caking Agent)."
+        },
+        {
+            "food_name": "Chicken Party Wings",
+            "brand_name": "Smart Chicken",
+            "serving_qty": 4,
+            "serving_unit": "ounces",
+            "serving_weight_grams": 112,
+            "nf_calories": 170,
+            "nf_total_fat": 9,
+            "nf_saturated_fat": 2.5,
+            "nf_cholesterol": 85,
+            "nf_sodium": 80,
+            "nf_total_carbohydrate": 1,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 22,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 22
+                },
+                {
+                    "attr_id": 204,
+                    "value": 9
+                },
+                {
+                    "attr_id": 205,
+                    "value": 1
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 0.72
+                },
+                {
+                    "attr_id": 307,
+                    "value": 80
+                },
+                {
+                    "attr_id": 601,
+                    "value": 85
+                },
+                {
+                    "attr_id": 606,
+                    "value": 2.5
+                }
+            ],
+            "nix_brand_name": "Smart Chicken",
+            "nix_brand_id": "548f0b98e1928e5266156716",
+            "nix_item_name": "Chicken Party Wings",
+            "nix_item_id": "5950b1ba0166d07f141da387",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5950b1c80166d07f141da38a.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-06-26T07:03:37+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Organic Chicken",
+            "brand_name": "Smart Chicken",
+            "serving_qty": 4,
+            "serving_unit": "ounces",
+            "serving_weight_grams": 112,
+            "nf_calories": 120,
+            "nf_total_fat": 1,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": 65,
+            "nf_sodium": 50,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 26,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 26
+                },
+                {
+                    "attr_id": 204,
+                    "value": 1
+                },
+                {
+                    "attr_id": 208,
+                    "value": 120
+                },
+                {
+                    "attr_id": 307,
+                    "value": 50
+                },
+                {
+                    "attr_id": 601,
+                    "value": 65
+                }
+            ],
+            "nix_brand_name": "Smart Chicken",
+            "nix_brand_id": "548f0b98e1928e5266156716",
+            "nix_item_name": "Organic Chicken",
+            "nix_item_id": "5a0fdc0ee0ac5dee42366f84",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5a0fdc14e0ac5dee42366f86.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-11-18T07:07:02+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Spicy Mango Flavored Sauce",
+            "brand_name": "Crispy Chicken",
+            "serving_qty": 5,
+            "serving_unit": "oz",
+            "serving_weight_grams": 140,
+            "nf_calories": 250,
+            "nf_total_fat": 14,
+            "nf_saturated_fat": 2,
+            "nf_cholesterol": 25,
+            "nf_sodium": 620,
+            "nf_total_carbohydrate": 23,
+            "nf_dietary_fiber": null,
+            "nf_sugars": 9,
+            "nf_protein": 12,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 12
+                },
+                {
+                    "attr_id": 204,
+                    "value": 14
+                },
+                {
+                    "attr_id": 205,
+                    "value": 23
+                },
+                {
+                    "attr_id": 208,
+                    "value": 250
+                },
+                {
+                    "attr_id": 269,
+                    "value": 9
+                },
+                {
+                    "attr_id": 303,
+                    "value": 0.72
+                },
+                {
+                    "attr_id": 307,
+                    "value": 620
+                },
+                {
+                    "attr_id": 318,
+                    "value": 400
+                },
+                {
+                    "attr_id": 401,
+                    "value": 1.2
+                },
+                {
+                    "attr_id": 601,
+                    "value": 25
+                },
+                {
+                    "attr_id": 606,
+                    "value": 2
+                }
+            ],
+            "nix_brand_name": "Crispy Chicken",
+            "nix_brand_id": "57eca6bae2050b9b2c0dc256",
+            "nix_item_name": "Spicy Mango Flavored Sauce",
+            "nix_item_id": "57eca68265bfe8940e683727",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/57eca6e265bfe8940e683736.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-09-29T05:30:10+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Uncured Organic Chicken Sausage, Sweet Apple",
+            "brand_name": "Smart Chicken",
+            "serving_qty": 1,
+            "serving_unit": "link",
+            "serving_weight_grams": 85,
+            "nf_calories": 140,
+            "nf_total_fat": 6,
+            "nf_saturated_fat": 1.5,
+            "nf_cholesterol": 65,
+            "nf_sodium": 460,
+            "nf_total_carbohydrate": 6,
+            "nf_dietary_fiber": null,
+            "nf_sugars": 6,
+            "nf_protein": 14,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 14
+                },
+                {
+                    "attr_id": 204,
+                    "value": 6
+                },
+                {
+                    "attr_id": 205,
+                    "value": 6
+                },
+                {
+                    "attr_id": 208,
+                    "value": 140
+                },
+                {
+                    "attr_id": 269,
+                    "value": 6
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 0.72
+                },
+                {
+                    "attr_id": 307,
+                    "value": 460
+                },
+                {
+                    "attr_id": 601,
+                    "value": 65
+                },
+                {
+                    "attr_id": 606,
+                    "value": 1.5
+                }
+            ],
+            "nix_brand_name": "Smart Chicken",
+            "nix_brand_id": "548f0b98e1928e5266156716",
+            "nix_item_name": "Uncured Organic Chicken Sausage, Sweet Apple",
+            "nix_item_id": "58e88cc538fb6b306e0d60b1",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58e88e3a75ffd6702999096d.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-04-08T07:06:59+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "1/4 Chicken, Dark",
+            "brand_name": "Cowboy Chicken",
+            "serving_qty": 3.4,
+            "serving_unit": "oz.",
+            "serving_weight_grams": null,
+            "nf_calories": 250,
+            "nf_total_fat": 15,
+            "nf_saturated_fat": 4,
+            "nf_cholesterol": 85,
+            "nf_sodium": 650,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 25,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 25
+                },
+                {
+                    "attr_id": 204,
+                    "value": 15
+                },
+                {
+                    "attr_id": 208,
+                    "value": 250
+                },
+                {
+                    "attr_id": 307,
+                    "value": 650
+                },
+                {
+                    "attr_id": 601,
+                    "value": 85
+                },
+                {
+                    "attr_id": 606,
+                    "value": 4
+                }
+            ],
+            "nix_brand_name": "Cowboy Chicken",
+            "nix_brand_id": "521b95444a56d006cae29885",
+            "nix_item_name": "1/4 Chicken, Dark",
+            "nix_item_id": "53444d8f7ba4ca15456f56ef",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-10-23T15:00:48+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Burrito Bowls",
+            "brand_name": "Chicken Chipotle",
+            "serving_qty": 1,
+            "serving_unit": "bowl",
+            "serving_weight_grams": 354,
+            "nf_calories": 510,
+            "nf_total_fat": 12,
+            "nf_saturated_fat": 6,
+            "nf_cholesterol": 75,
+            "nf_sodium": 950,
+            "nf_total_carbohydrate": 70,
+            "nf_dietary_fiber": 8,
+            "nf_sugars": 5,
+            "nf_protein": 30,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 30
+                },
+                {
+                    "attr_id": 204,
+                    "value": 12
+                },
+                {
+                    "attr_id": 205,
+                    "value": 70
+                },
+                {
+                    "attr_id": 208,
+                    "value": 510
+                },
+                {
+                    "attr_id": 269,
+                    "value": 5
+                },
+                {
+                    "attr_id": 291,
+                    "value": 8
+                },
+                {
+                    "attr_id": 301,
+                    "value": 200
+                },
+                {
+                    "attr_id": 303,
+                    "value": 6.3
+                },
+                {
+                    "attr_id": 307,
+                    "value": 950
+                },
+                {
+                    "attr_id": 318,
+                    "value": 1250
+                },
+                {
+                    "attr_id": 401,
+                    "value": 6
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 606,
+                    "value": 6
+                }
+            ],
+            "nix_brand_name": "Chicken Chipotle",
+            "nix_brand_id": "561c00871485de5737d086dd",
+            "nix_item_name": "Burrito Bowls",
+            "nix_item_id": "561bffd8a5bc833f5310b6fa",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/561c02617747c96e7b80fc9f.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-10-12T18:56:34+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Diet Dr Pepper",
+            "brand_name": "Chicken Express",
+            "serving_qty": 20,
+            "serving_unit": "oz",
+            "serving_weight_grams": null,
+            "nf_calories": 0,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 100,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": null,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 307,
+                    "value": 100
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Diet Dr Pepper",
+            "nix_item_id": "23cb99538374dadef5500ceb",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:10:05+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Chicken Express Sweet Tea",
+            "brand_name": "Chicken Express",
+            "serving_qty": 20,
+            "serving_unit": "oz",
+            "serving_weight_grams": 20,
+            "nf_calories": 190,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": null,
+            "nf_total_carbohydrate": 12,
+            "nf_dietary_fiber": null,
+            "nf_sugars": 12,
+            "nf_protein": null,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 205,
+                    "value": 12
+                },
+                {
+                    "attr_id": 208,
+                    "value": 190
+                },
+                {
+                    "attr_id": 269,
+                    "value": 12
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Chicken Express Sweet Tea",
+            "nix_item_id": "513fc99a927da704080068bb",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Chocolate",
+            "brand_name": "Chicken Express",
+            "serving_qty": 2,
+            "serving_unit": "Tbsp",
+            "serving_weight_grams": 25,
+            "nf_calories": 100,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 15,
+            "nf_total_carbohydrate": 24,
+            "nf_dietary_fiber": 1,
+            "nf_sugars": 20,
+            "nf_protein": 1,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 1
+                },
+                {
+                    "attr_id": 205,
+                    "value": 24
+                },
+                {
+                    "attr_id": 208,
+                    "value": 100
+                },
+                {
+                    "attr_id": 269,
+                    "value": 20
+                },
+                {
+                    "attr_id": 291,
+                    "value": 1
+                },
+                {
+                    "attr_id": 307,
+                    "value": 15
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Chocolate",
+            "nix_item_id": "513fc99a927da7040800689b",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Fried Chicken Thigh",
+            "brand_name": "Chicken Express",
+            "serving_qty": 3.5,
+            "serving_unit": "oz",
+            "serving_weight_grams": 100,
+            "nf_calories": 290,
+            "nf_total_fat": 22,
+            "nf_saturated_fat": 8,
+            "nf_cholesterol": 100,
+            "nf_sodium": 690,
+            "nf_total_carbohydrate": 8,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 17,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 17
+                },
+                {
+                    "attr_id": 204,
+                    "value": 22
+                },
+                {
+                    "attr_id": 205,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 290
+                },
+                {
+                    "attr_id": 307,
+                    "value": 690
+                },
+                {
+                    "attr_id": 601,
+                    "value": 100
+                },
+                {
+                    "attr_id": 605,
+                    "value": 1
+                },
+                {
+                    "attr_id": 606,
+                    "value": 8
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Fried Chicken Thigh",
+            "nix_item_id": "513fc99a927da70408006885",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:08:59+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Fried Chicken Wing",
+            "brand_name": "Chicken Express",
+            "serving_qty": 3.5,
+            "serving_unit": "oz",
+            "serving_weight_grams": 100,
+            "nf_calories": 270,
+            "nf_total_fat": 17,
+            "nf_saturated_fat": 6,
+            "nf_cholesterol": 100,
+            "nf_sodium": 940,
+            "nf_total_carbohydrate": 9,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 20,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 20
+                },
+                {
+                    "attr_id": 204,
+                    "value": 17
+                },
+                {
+                    "attr_id": 205,
+                    "value": 9
+                },
+                {
+                    "attr_id": 208,
+                    "value": 270
+                },
+                {
+                    "attr_id": 307,
+                    "value": 940
+                },
+                {
+                    "attr_id": 601,
+                    "value": 100
+                },
+                {
+                    "attr_id": 605,
+                    "value": 1
+                },
+                {
+                    "attr_id": 606,
+                    "value": 6
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Fried Chicken Wing",
+            "nix_item_id": "513fc99a927da70408006884",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:08:59+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Heinz Honey",
+            "brand_name": "Chicken Express",
+            "serving_qty": 1,
+            "serving_unit": "Packet",
+            "serving_weight_grams": 9,
+            "nf_calories": 25,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": null,
+            "nf_total_carbohydrate": 7,
+            "nf_dietary_fiber": null,
+            "nf_sugars": 7,
+            "nf_protein": null,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 205,
+                    "value": 7
+                },
+                {
+                    "attr_id": 208,
+                    "value": 25
+                },
+                {
+                    "attr_id": 269,
+                    "value": 7
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Heinz Honey",
+            "nix_item_id": "513fc99a927da704080068a7",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Hushpuppies",
+            "brand_name": "Chicken Express",
+            "serving_qty": 3,
+            "serving_unit": "pcs",
+            "serving_weight_grams": 52,
+            "nf_calories": 130,
+            "nf_total_fat": 4.5,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 400,
+            "nf_total_carbohydrate": 20,
+            "nf_dietary_fiber": 1,
+            "nf_sugars": 2,
+            "nf_protein": 2,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 2
+                },
+                {
+                    "attr_id": 204,
+                    "value": 4.5
+                },
+                {
+                    "attr_id": 205,
+                    "value": 20
+                },
+                {
+                    "attr_id": 208,
+                    "value": 130
+                },
+                {
+                    "attr_id": 269,
+                    "value": 2
+                },
+                {
+                    "attr_id": 291,
+                    "value": 1
+                },
+                {
+                    "attr_id": 307,
+                    "value": 400
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Hushpuppies",
+            "nix_item_id": "513fc99a927da7040800688c",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Mango",
+            "brand_name": "Chicken Express",
+            "serving_qty": 2,
+            "serving_unit": "Tbsp",
+            "serving_weight_grams": 25,
+            "nf_calories": 20,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": null,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": 2,
+            "nf_sugars": 4,
+            "nf_protein": null,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 208,
+                    "value": 20
+                },
+                {
+                    "attr_id": 269,
+                    "value": 4
+                },
+                {
+                    "attr_id": 291,
+                    "value": 2
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Mango",
+            "nix_item_id": "513fc99a927da704080068a3",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Minute Maid Strawberry Smoothie",
+            "brand_name": "Chicken Express",
+            "serving_qty": 8,
+            "serving_unit": "oz",
+            "serving_weight_grams": 8,
+            "nf_calories": 130,
+            "nf_total_fat": null,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": null,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": 11,
+            "nf_sugars": 35,
+            "nf_protein": null,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 208,
+                    "value": 130
+                },
+                {
+                    "attr_id": 269,
+                    "value": 35
+                },
+                {
+                    "attr_id": 291,
+                    "value": 11
+                }
+            ],
+            "nix_brand_name": "Chicken Express",
+            "nix_brand_id": "513fbc1283aa2dc80c00007d",
+            "nix_item_name": "Minute Maid Strawberry Smoothie",
+            "nix_item_id": "513fc99a927da704080068b8",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-12T18:09:00+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Sweet Corn Nuggets (8)",
+            "brand_name": "Church's Chicken",
+            "serving_qty": 100,
+            "serving_unit": "g",
+            "serving_weight_grams": null,
+            "nf_calories": 240,
+            "nf_total_fat": 7,
+            "nf_saturated_fat": 1,
+            "nf_cholesterol": null,
+            "nf_sodium": 520,
+            "nf_total_carbohydrate": 40,
+            "nf_dietary_fiber": 2,
+            "nf_sugars": 2,
+            "nf_protein": 4,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 4
+                },
+                {
+                    "attr_id": 204,
+                    "value": 7
+                },
+                {
+                    "attr_id": 205,
+                    "value": 40
+                },
+                {
+                    "attr_id": 208,
+                    "value": 240
+                },
+                {
+                    "attr_id": 269,
+                    "value": 2
+                },
+                {
+                    "attr_id": 291,
+                    "value": 2
+                },
+                {
+                    "attr_id": 307,
+                    "value": 520
+                },
+                {
+                    "attr_id": 606,
+                    "value": 1
+                }
+            ],
+            "nix_brand_name": "Church's Chicken",
+            "nix_brand_id": "513fbc1283aa2dc80c00002d",
+            "nix_item_name": "Sweet Corn Nuggets (8)",
+            "nix_item_id": "521b95cc4a56d006d578bb6a",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d2eawub7utcl6.cloudfront.net/images/nix-apple-grey.png",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-07-23T16:56:20+00:00",
+            "nf_ingredient_statement": ""
+        },
+        {
+            "food_name": "Chicken Tenders",
+            "brand_name": "Country Chicken",
+            "serving_qty": 2,
+            "serving_unit": "pieces",
+            "serving_weight_grams": 113,
+            "nf_calories": 170,
+            "nf_total_fat": 3,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": 40,
+            "nf_sodium": 760,
+            "nf_total_carbohydrate": 19,
+            "nf_dietary_fiber": 1,
+            "nf_sugars": 1,
+            "nf_protein": 16,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 16
+                },
+                {
+                    "attr_id": 204,
+                    "value": 3
+                },
+                {
+                    "attr_id": 205,
+                    "value": 19
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 269,
+                    "value": 1
+                },
+                {
+                    "attr_id": 291,
+                    "value": 1
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 0.36
+                },
+                {
+                    "attr_id": 307,
+                    "value": 760
+                },
+                {
+                    "attr_id": 318,
+                    "value": 200
+                },
+                {
+                    "attr_id": 601,
+                    "value": 40
+                }
+            ],
+            "nix_brand_name": "Country Chicken",
+            "nix_brand_id": "5513b52c1d0b57d61f65087d",
+            "nix_item_name": "Chicken Tenders",
+            "nix_item_id": "5513b4ca43bd99d4044afd47",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5513b6821d0b57d61f6508ce.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-03-26T07:34:26+00:00",
+            "nf_ingredient_statement": null
+        }
+
+    ]
+}

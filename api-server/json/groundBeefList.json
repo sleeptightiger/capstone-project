@@ -1,0 +1,1363 @@
+
+{
+    "foods": [
+        {
+            "food_name": "Lean Ground Beef",
+            "brand_name": "Cargill Ground Beef",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 170,
+            "nf_total_fat": 8,
+            "nf_saturated_fat": 3,
+            "nf_cholesterol": 65,
+            "nf_sodium": 70,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 70
+                },
+                {
+                    "attr_id": 601,
+                    "value": 65
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3
+                }
+            ],
+            "nix_brand_name": "Cargill Ground Beef",
+            "nix_brand_id": "571cca2f06302f23383da9c4",
+            "nix_item_name": "Lean Ground Beef",
+            "nix_item_id": "571ccb35342b144b6496dfb8",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/571ccabc06302f23383da9de.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-04-24T13:31:40+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef, Ground",
+            "brand_name": "Grass Run Farms",
+            "serving_qty": 4,
+            "serving_unit": "oz.",
+            "serving_weight_grams": 112,
+            "nf_calories": 180,
+            "nf_total_fat": 9,
+            "nf_saturated_fat": 3.5,
+            "nf_cholesterol": 70,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 9
+                },
+                {
+                    "attr_id": 208,
+                    "value": 180
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 70
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3.5
+                }
+            ],
+            "nix_brand_name": "Grass Run Farms",
+            "nix_brand_id": "5573373b0d2525550f55a663",
+            "nix_item_name": "Beef, Ground",
+            "nix_item_id": "599e7af274a0ee90610ed23c",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/599e7af574a0ee90610ed23e.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-08-24T07:06:30+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beefless Ground",
+            "brand_name": "Gardein",
+            "serving_qty": 0.5,
+            "serving_unit": "cup",
+            "serving_weight_grams": 57,
+            "nf_calories": 80,
+            "nf_total_fat": 1.5,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 230,
+            "nf_total_carbohydrate": 5,
+            "nf_dietary_fiber": 3,
+            "nf_sugars": 1,
+            "nf_protein": 12,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 12
+                },
+                {
+                    "attr_id": 204,
+                    "value": 1.5
+                },
+                {
+                    "attr_id": 205,
+                    "value": 5
+                },
+                {
+                    "attr_id": 208,
+                    "value": 80
+                },
+                {
+                    "attr_id": 269,
+                    "value": 1
+                },
+                {
+                    "attr_id": 291,
+                    "value": 3
+                },
+                {
+                    "attr_id": 301,
+                    "value": 60
+                },
+                {
+                    "attr_id": 303,
+                    "value": 1.8
+                },
+                {
+                    "attr_id": 307,
+                    "value": 230
+                }
+            ],
+            "nix_brand_name": "Gardein",
+            "nix_brand_id": "51db37b6176fe9790a898972",
+            "nix_item_name": "Beefless Ground",
+            "nix_item_id": "54a08bb208aa5c2b492af266",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/54a6d8f19b16f1870ddaf292.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-03-23T23:08:32+00:00",
+            "nf_ingredient_statement": "gardein™: water, soy protein concentrate*, expeller pressed canola oil*, organic cane sugar, caramel color, yeast extract, sea salt, onion powder, garlic powder, natural flavors (from plant sources), spices. *Non genetically engineered soybeans and canola. Manufactured in a facility that also processes wheat products."
+        },
+        {
+            "food_name": "Ground Beef",
+            "brand_name": "Harris Teeter",
+            "serving_qty": 4,
+            "serving_unit": "oz.",
+            "serving_weight_grams": 112,
+            "nf_calories": 170,
+            "nf_total_fat": 8,
+            "nf_saturated_fat": 3,
+            "nf_cholesterol": 65,
+            "nf_sodium": 70,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 70
+                },
+                {
+                    "attr_id": 601,
+                    "value": 65
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3
+                }
+            ],
+            "nix_brand_name": "Harris Teeter",
+            "nix_brand_id": "51db37b2176fe9790a898508",
+            "nix_item_name": "Ground Beef",
+            "nix_item_id": "5a0a95aa843ad3205a187513",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5a0a95b1843ad3205a187514.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-11-14T07:05:21+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef , Ground",
+            "brand_name": "Vermont Country Farms",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 200,
+            "nf_total_fat": 11,
+            "nf_saturated_fat": 4.5,
+            "nf_cholesterol": 75,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 22,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 22
+                },
+                {
+                    "attr_id": 204,
+                    "value": 11
+                },
+                {
+                    "attr_id": 208,
+                    "value": 200
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 606,
+                    "value": 4.5
+                }
+            ],
+            "nix_brand_name": "Vermont Country Farms",
+            "nix_brand_id": "58f70c2f93ed56fd6d34495f",
+            "nix_item_name": "Beef , Ground",
+            "nix_item_id": "58f70c2b93ed56fd6d34495d",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58f70c36506108e4691b52a4.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-04-19T07:05:28+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef Ground",
+            "brand_name": "Unknown",
+            "serving_qty": 1,
+            "serving_unit": "ounce",
+            "serving_weight_grams": 28,
+            "nf_calories": 170,
+            "nf_total_fat": 8,
+            "nf_saturated_fat": 3.5,
+            "nf_cholesterol": 70,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 70
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3.5
+                }
+            ],
+            "nix_brand_name": "Unknown",
+            "nix_brand_id": "526831133203b9c3390001c8",
+            "nix_item_name": "Beef Ground",
+            "nix_item_id": "58e496e0b658a61c07705d23",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58e499043286fc1202b9e70c.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-04-05T07:04:05+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Beef, Ground Chuck",
+            "brand_name": "H-E-B",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 280,
+            "nf_total_fat": 22,
+            "nf_saturated_fat": 9,
+            "nf_cholesterol": 80,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 19,
+            "nf_potassium": 300,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 19
+                },
+                {
+                    "attr_id": 204,
+                    "value": 22
+                },
+                {
+                    "attr_id": 208,
+                    "value": 280
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 1.8
+                },
+                {
+                    "attr_id": 306,
+                    "value": 300
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 80
+                },
+                {
+                    "attr_id": 605,
+                    "value": 1.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 9
+                }
+            ],
+            "nix_brand_name": "H-E-B",
+            "nix_brand_id": "51db37d9176fe9790a89a00a",
+            "nix_item_name": "Ground Beef, Ground Chuck",
+            "nix_item_id": "59686eb970c3175a6f55c656",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/59686ec193fa2f3c15d8173a.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-07-14T07:12:05+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Sirloin Ground Beef",
+            "brand_name": "H-E-B",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 200,
+            "nf_total_fat": 11,
+            "nf_saturated_fat": 4.5,
+            "nf_cholesterol": 75,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 22,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 22
+                },
+                {
+                    "attr_id": 204,
+                    "value": 11
+                },
+                {
+                    "attr_id": 208,
+                    "value": 200
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 605,
+                    "value": 0.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 4.5
+                }
+            ],
+            "nix_brand_name": "H-E-B",
+            "nix_brand_id": "51db37d9176fe9790a89a00a",
+            "nix_item_name": "Ground Sirloin Ground Beef",
+            "nix_item_id": "555339c31c859bff32ef2783",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/55533b1d53271a9751c68944.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-05-13T11:53:01+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef-less Ground Beef",
+            "brand_name": "Trader Joe's",
+            "serving_qty": 0.33,
+            "serving_unit": "cup",
+            "serving_weight_grams": 55,
+            "nf_calories": 60,
+            "nf_total_fat": 1,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 270,
+            "nf_total_carbohydrate": 4,
+            "nf_dietary_fiber": 3,
+            "nf_sugars": 0.5,
+            "nf_protein": 9,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 9
+                },
+                {
+                    "attr_id": 204,
+                    "value": 1
+                },
+                {
+                    "attr_id": 205,
+                    "value": 4
+                },
+                {
+                    "attr_id": 208,
+                    "value": 60
+                },
+                {
+                    "attr_id": 269,
+                    "value": 0.5
+                },
+                {
+                    "attr_id": 291,
+                    "value": 3
+                },
+                {
+                    "attr_id": 301,
+                    "value": 60
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 270
+                },
+                {
+                    "attr_id": 401,
+                    "value": 6
+                }
+            ],
+            "nix_brand_name": "Trader Joe's",
+            "nix_brand_id": "51db381b176fe9790a89b587",
+            "nix_item_name": "Beef-less Ground Beef",
+            "nix_item_id": "54ec5fd5c736505660b9b733",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/54ec6036a62132073337b02a.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-02-24T11:27:50+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Sirloin Beef and Ground Beef Patties",
+            "brand_name": "Jensen's Finest",
+            "serving_qty": 1,
+            "serving_unit": "patty",
+            "serving_weight_grams": 151,
+            "nf_calories": 320,
+            "nf_total_fat": 23,
+            "nf_saturated_fat": 9,
+            "nf_cholesterol": 115,
+            "nf_sodium": 120,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 28,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 28
+                },
+                {
+                    "attr_id": 204,
+                    "value": 23
+                },
+                {
+                    "attr_id": 208,
+                    "value": 320
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 3.6
+                },
+                {
+                    "attr_id": 307,
+                    "value": 120
+                },
+                {
+                    "attr_id": 601,
+                    "value": 115
+                },
+                {
+                    "attr_id": 605,
+                    "value": 2
+                },
+                {
+                    "attr_id": 606,
+                    "value": 9
+                }
+            ],
+            "nix_brand_name": "Jensen's Finest",
+            "nix_brand_id": "51db3815176fe9790a89b327",
+            "nix_item_name": "Ground Sirloin Beef and Ground Beef Patties",
+            "nix_item_id": "55d35f0f883da39364a11017",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/55d35f90883da39364a1102e.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-08-18T22:37:07+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Beef Burger, Kobe Beef",
+            "brand_name": "American BBQ Company",
+            "serving_qty": 1,
+            "serving_unit": "patty raw",
+            "serving_weight_grams": 113,
+            "nf_calories": 330,
+            "nf_total_fat": 28,
+            "nf_saturated_fat": 11,
+            "nf_cholesterol": 85,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 17,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 17
+                },
+                {
+                    "attr_id": 204,
+                    "value": 28
+                },
+                {
+                    "attr_id": 208,
+                    "value": 330
+                },
+                {
+                    "attr_id": 301,
+                    "value": 20
+                },
+                {
+                    "attr_id": 303,
+                    "value": 1.8
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 85
+                },
+                {
+                    "attr_id": 605,
+                    "value": 1.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 11
+                }
+            ],
+            "nix_brand_name": "American BBQ Company",
+            "nix_brand_id": "563c150a27c719612bbaf9b8",
+            "nix_item_name": "Ground Beef Burger, Kobe Beef",
+            "nix_item_id": "58ca3996067a1bdf3e66e908",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58ca3999067a1bdf3e66e90a.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-03-16T07:04:23+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Beef, Grass Fed Beef",
+            "brand_name": "Strauss",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 113,
+            "nf_calories": 200,
+            "nf_total_fat": 11,
+            "nf_saturated_fat": 4.5,
+            "nf_cholesterol": 75,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 11
+                },
+                {
+                    "attr_id": 208,
+                    "value": 200
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 606,
+                    "value": 4.5
+                }
+            ],
+            "nix_brand_name": "Strauss",
+            "nix_brand_id": "51db37b7176fe9790a898a92",
+            "nix_item_name": "Ground Beef, Grass Fed Beef",
+            "nix_item_id": "5858d89c111a1514433e6f9f",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5858d8a0111a1514433e6fa1.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-12-20T07:12:00+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Ground Sirloin Beef & Beef Patties",
+            "brand_name": "Member's Mark",
+            "serving_qty": 1,
+            "serving_unit": "patty",
+            "serving_weight_grams": 149,
+            "nf_calories": 330,
+            "nf_total_fat": 24,
+            "nf_saturated_fat": 10,
+            "nf_cholesterol": 95,
+            "nf_sodium": 85,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 29,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 29
+                },
+                {
+                    "attr_id": 204,
+                    "value": 24
+                },
+                {
+                    "attr_id": 208,
+                    "value": 330
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 85
+                },
+                {
+                    "attr_id": 601,
+                    "value": 95
+                },
+                {
+                    "attr_id": 605,
+                    "value": 1.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 10
+                }
+            ],
+            "nix_brand_name": "Member's Mark",
+            "nix_brand_id": "546f4d5fa5c4dcf51e0cbc70",
+            "nix_item_name": "Ground Sirloin Beef & Beef Patties",
+            "nix_item_id": "58de01fc4a2850120f541ec5",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/58ddffeb05b3025232afafe0.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-03-31T07:15:15+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Grass Fed Beef, Ground Beef",
+            "brand_name": "Strauss",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 113,
+            "nf_calories": 240,
+            "nf_total_fat": 17,
+            "nf_saturated_fat": 7,
+            "nf_cholesterol": 75,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 21,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 21
+                },
+                {
+                    "attr_id": 204,
+                    "value": 17
+                },
+                {
+                    "attr_id": 208,
+                    "value": 240
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 606,
+                    "value": 7
+                }
+            ],
+            "nix_brand_name": "Strauss",
+            "nix_brand_id": "51db37b7176fe9790a898a92",
+            "nix_item_name": "Grass Fed Beef, Ground Beef",
+            "nix_item_id": "54eb4699f5d806982af5d64f",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/54eb6f7e9c0b588854154020.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-04-10T06:18:51+00:00",
+            "nf_ingredient_statement": "100% grass fed beef"
+        },
+        {
+            "food_name": "Laura's Lean Beef, Ground Beef",
+            "brand_name": "Nature's Promise",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 160,
+            "nf_total_fat": 9,
+            "nf_saturated_fat": 4,
+            "nf_cholesterol": 60,
+            "nf_sodium": 70,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 21,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 21
+                },
+                {
+                    "attr_id": 204,
+                    "value": 9
+                },
+                {
+                    "attr_id": 208,
+                    "value": 160
+                },
+                {
+                    "attr_id": 303,
+                    "value": 3.6
+                },
+                {
+                    "attr_id": 307,
+                    "value": 70
+                },
+                {
+                    "attr_id": 601,
+                    "value": 60
+                },
+                {
+                    "attr_id": 606,
+                    "value": 4
+                }
+            ],
+            "nix_brand_name": "Nature's Promise",
+            "nix_brand_id": "51db37b1176fe9790a898468",
+            "nix_item_name": "Laura's Lean Beef, Ground Beef",
+            "nix_item_id": "5976ee22b436cc0935c2f0d0",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5976ee25b436cc0935c2f0d1.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-07-25T07:07:19+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef Patties, 100% Ground Beef",
+            "brand_name": "R Everyday",
+            "serving_qty": 1,
+            "serving_unit": "patty",
+            "serving_weight_grams": 113,
+            "nf_calories": 330,
+            "nf_total_fat": 28,
+            "nf_saturated_fat": null,
+            "nf_cholesterol": null,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 18,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 18
+                },
+                {
+                    "attr_id": 204,
+                    "value": 28
+                },
+                {
+                    "attr_id": 208,
+                    "value": 330
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                }
+            ],
+            "nix_brand_name": "R Everyday",
+            "nix_brand_id": "51db37b8176fe9790a898aef",
+            "nix_item_name": "Beef Patties, 100% Ground Beef",
+            "nix_item_id": "554f0d4c2206e93e58f3afd0",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/554f0d6b6671c9555d49deb2.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-05-10T07:48:59+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Grass-Fed Beef, Ground Beef",
+            "brand_name": "Jones Creek",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 290,
+            "nf_total_fat": 23,
+            "nf_saturated_fat": 9,
+            "nf_cholesterol": 80,
+            "nf_sodium": 70,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 20,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 20
+                },
+                {
+                    "attr_id": 204,
+                    "value": 23
+                },
+                {
+                    "attr_id": 208,
+                    "value": 290
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 70
+                },
+                {
+                    "attr_id": 601,
+                    "value": 80
+                },
+                {
+                    "attr_id": 606,
+                    "value": 9
+                }
+            ],
+            "nix_brand_name": "Jones Creek",
+            "nix_brand_id": "54fb51470fa179a75619f878",
+            "nix_item_name": "Grass-Fed Beef, Ground Beef",
+            "nix_item_id": "55323fbac9473fd73c9b3d96",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/55323fd2ea3e17ad4ea1ad25.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-04-18T11:28:18+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Angus Beef, Lean Ground Beef",
+            "brand_name": "Black Canyon",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 170,
+            "nf_total_fat": 8,
+            "nf_saturated_fat": 3.5,
+            "nf_cholesterol": 70,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 303,
+                    "value": 2.7
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 70
+                },
+                {
+                    "attr_id": 605,
+                    "value": 0.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3.5
+                }
+            ],
+            "nix_brand_name": "Black Canyon",
+            "nix_brand_id": "54a2c52bd73aaae013b2490f",
+            "nix_item_name": "Angus Beef, Lean Ground Beef",
+            "nix_item_id": "5538a3d0d2fff9811c4390c7",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/5538a41f799f0c186d572228.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2015-04-23T07:49:51+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "93% Lean Ground Beef",
+            "brand_name": "WinCo Foods",
+            "serving_qty": 4,
+            "serving_unit": "oz",
+            "serving_weight_grams": 112,
+            "nf_calories": 170,
+            "nf_total_fat": 8,
+            "nf_saturated_fat": 3.5,
+            "nf_cholesterol": 70,
+            "nf_sodium": 75,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 23,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 23
+                },
+                {
+                    "attr_id": 204,
+                    "value": 8
+                },
+                {
+                    "attr_id": 208,
+                    "value": 170
+                },
+                {
+                    "attr_id": 303,
+                    "value": 1.8
+                },
+                {
+                    "attr_id": 307,
+                    "value": 75
+                },
+                {
+                    "attr_id": 601,
+                    "value": 70
+                },
+                {
+                    "attr_id": 605,
+                    "value": 0.5
+                },
+                {
+                    "attr_id": 606,
+                    "value": 3.5
+                }
+            ],
+            "nix_brand_name": "WinCo Foods",
+            "nix_brand_id": "5457c38253af3d475e632a6f",
+            "nix_item_name": "93% Lean Ground Beef",
+            "nix_item_id": "59ec42f2c0e55536702bfce9",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/59ec42f54983dc3960d7b39e.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2017-10-22T07:04:22+00:00",
+            "nf_ingredient_statement": null
+        },
+        {
+            "food_name": "Beef Patties, 100% Ground",
+            "brand_name": "The Butcher's Cut",
+            "serving_qty": 1,
+            "serving_unit": "patty",
+            "serving_weight_grams": 112,
+            "nf_calories": 280,
+            "nf_total_fat": 22,
+            "nf_saturated_fat": 9,
+            "nf_cholesterol": 75,
+            "nf_sodium": 60,
+            "nf_total_carbohydrate": null,
+            "nf_dietary_fiber": null,
+            "nf_sugars": null,
+            "nf_protein": 21,
+            "nf_potassium": null,
+            "nf_p": null,
+            "full_nutrients": [
+                {
+                    "attr_id": 203,
+                    "value": 21
+                },
+                {
+                    "attr_id": 204,
+                    "value": 22
+                },
+                {
+                    "attr_id": 208,
+                    "value": 280
+                },
+                {
+                    "attr_id": 303,
+                    "value": 1.8
+                },
+                {
+                    "attr_id": 307,
+                    "value": 60
+                },
+                {
+                    "attr_id": 601,
+                    "value": 75
+                },
+                {
+                    "attr_id": 606,
+                    "value": 9
+                }
+            ],
+            "nix_brand_name": "The Butcher's Cut",
+            "nix_brand_id": "51db37f3176fe9790a89a9e7",
+            "nix_item_name": "Beef Patties, 100% Ground",
+            "nix_item_id": "557a931ec8a8f1964810e2e5",
+            "metadata": {},
+            "source": 8,
+            "ndb_no": null,
+            "tags": null,
+            "alt_measures": null,
+            "photo": {
+                "thumb": "https://d1r9wva3zcpswd.cloudfront.net/557a936f7538908448175f8f.jpeg",
+                "highres": null,
+                "is_user_uploaded": false
+            },
+            "updated_at": "2016-06-17T14:05:39+00:00",
+            "nf_ingredient_statement": "100% Ground Beef Patties"
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

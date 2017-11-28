@@ -25,7 +25,6 @@ app.use(morgan('combined'))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*',);
   next();
@@ -33,6 +32,7 @@ app.use((req, res, next) => {
 
 
 
+// Headers for Nutritionix API
 const headers = {
   'x-app-id': process.env.NUTRITION_APP_ID,
   'x-app-key': process.env.NUTRITION_APP_KEY,
@@ -80,6 +80,19 @@ app.get('/natural', (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+
+})
+
+var json = require('./json/chickenList.json');
+
+app.get('/test', (req, res) => {
+  var x = []
+  for (let i = 0; i < json.foods.length; i++) {
+    x.push(json.foods[i]);
+  }
+
+  res.json(x)
+
 
 })
 
