@@ -71,8 +71,6 @@ class App extends Component {
               <NavLink className="navlink" exact to= '/'>Home</NavLink>
               <NavLink className="navlink" to= '/foodlist'>Food List</NavLink>
               {this._toggleAuthButton()}
-
-
             </nav>
             <Switch>
               <Route exact path="/" component={() => <Home />} />

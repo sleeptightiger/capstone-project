@@ -5,8 +5,8 @@ import _ from 'lodash';
 // import { database } from '../utils/firebase.js';
 
 class FoodList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       food: []
@@ -18,16 +18,12 @@ class FoodList extends Component {
 
   _getFoodResults(e) {
     e.preventDefault();
-    let searchTerm = this.inputBox.value
-    fetch(`/food/${searchTerm}`, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
+    let searchTerm = this.searchBox.value
+    fetch(`/instantSearch/${searchTerm}`)
     .then((res) => res.json())
     .then((data) => {
-      this._getNutrients(data.branded)
+      console.log(data.branded)
+      this._getNutritionInfoId(data.branded)
       this.setState({
         food: data.branded
       })
@@ -35,45 +31,46 @@ class FoodList extends Component {
   }
 
 
-  //  _getNutrients(data) {
-  //   console.log('this',data[0].nix_item_id);
-  //   let nutrients = data.map((data, i) => {
-  //     console.log(data.nix_item_id)
-  //     return data.nix_item_id;
-  //   })
-  //   console.log(nutrients);
-  // }
-
-  _getNutrients(data) {
-    let foodInfo = [];
-    let nutrients = data.map((data, i) => {
+   _getNutritionInfoId(data) {
+    let nutritionInfoId = data.map((data, i) => {
       return data.nix_item_id;
     })
-    let nix_id = nutrients;
-    console.log(nix_id)
-    // let doYaThang = nix_id.map((data, i) => {
-    //   console.log('Data:', data);
-    //   fetch(`/nutrients/${data}`, {
-    //     'Content-Type': 'application/json',
-    //     'Accept': 'application/json'
-    //   })
-    //   .then((res) => res.json())
-    //   .then((responseData) => {
-    //     foodInfo.push(responseData.foods[0].food_name);
-    //   })
-    //   this.setState({
-    //     food: foodInfo
-    //   })
-    //   console.log('Food Info!', this.state.food)
-    // })
+    console.log(nutritionInfoId);
   }
+
+  // _getNutrients(data) {
+  //   let foodInfo = [];
+  //   let nutrients = data.map((data, i) => {
+  //     return data.nix_item_id;
+  //   })
+  //   let nix_id = nutrients;
+  //   // console.log(nix_id)
+  //   let doYaThang = nix_id.map((data, i) => {
+  //     // console.log('Data:', data);
+  //     fetch(`/nutrients/${data}`, {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //     })
+  //     .then((res) => res.json())
+  //     .then((responseData) => {
+  //       // console.log(responseData.foods[0].food_name)
+  //       foodInfo.push(responseData.foods[0].food_name);
+  //       return responseData.foods[0].food_name;
+  //     })
+  //   })
+  //   this.setState({
+  //     food: foodInfo
+  //   })
+  //   console.log('Doya', doYaThang)
+  //   console.log('Food Info!', this.state.food)
+  // }
 
   render() {
 
-    var mapped = this.state.food.map((data, i) => {
-      let food = this.state.food[i];
+    var mapped = this.state.food.map((data, index) => {
+      let food = this.state.food[index];
       return (
-        <div key={i} className="results">
+        <div key={index} className="results">
           <h1>{_.startCase(food.food_name)}</h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
           <p>Calories: {food.nf_calories}</p>
@@ -86,7 +83,7 @@ class FoodList extends Component {
         <div>
           <form className="searchForm" onSubmit={this._getFoodResults}>
             <label htmlFor="query">Search: </label>
-            <input type="text" name="query" ref={(input) => this.inputBox = input}/>
+            <input type="text" name="query" ref={(input) => this.searchBox = input}/>
             <input type="submit" value="submit" />
           </form>
           {mapped}
@@ -100,9 +97,6 @@ class FoodList extends Component {
         </div>
       );
     }
-
-
-
   }
 }
 

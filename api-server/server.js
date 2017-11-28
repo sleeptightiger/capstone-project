@@ -41,7 +41,7 @@ const headers = {
 
 
 
-app.get('/food/:q', (req, res) => {
+app.get('/instantSearch/:q', (req, res) => {
   let query = req.params.q;
   const url = `https://trackapi.nutritionix.com/v2/search/instant?query=${query}`;
   axios.get(url, { headers })
