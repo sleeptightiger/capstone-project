@@ -37,7 +37,7 @@ class App extends Component {
           currentUser: newUser,
           currentUserUID: newUser.uid
         });
-        console.log('Logged in');
+        console.log('Logged in', newUser);
       } else {
         this.setState({
           currentUser: null

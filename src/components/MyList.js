@@ -15,7 +15,7 @@ class MyList extends Component {
 
 
   componentDidMount() {
-    fetch('/foodList')
+    fetch(`/foodList/${this.props.currentUserUID}`)
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -69,9 +69,25 @@ class MyList extends Component {
       );
     }
     return (
-      <div>
-        <h1>Your list</h1>
-        {infoMapped}
+      <div className="container">
+        <div className="left">
+          {infoMapped}
+        </div>
+        <div className="right">
+          <div>
+            <ul>
+              <li>Monday</li>
+              <li>Tuesday</li>
+              <li>Wednesday</li>
+              <li>Thursday</li>
+              <li>Friday</li>
+              <li>Saturday</li>
+            </ul>
+          </div>
+          <div>
+            <p>Data here</p>
+          </div>
+        </div>
       </div>
     );
   }

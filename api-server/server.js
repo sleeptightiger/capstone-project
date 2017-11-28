@@ -102,9 +102,12 @@ app.get('/chickenList', (req, res) => {
   res.json(jsonFile)
 })
 
+
+
 app.post('/foodList', (req, res) => {
   let getBody = req.body.data;
-  let userID = req.body.userID;
+  var userID = req.body.userID;
+
 
   let nutrtionFacts = new db.Food({
     user: userID,
@@ -124,12 +127,16 @@ app.post('/foodList', (req, res) => {
   });
 })
 
-app.get('/foodList', (req, res) => {
-  db.Food.find({}).then((data) => {
+
+app.get('/foodList/:id', (req, res) => {
+  var userId = req.params.id;
+  db.Food.find({
+    user: userId
+  }).then((data) => {
     if(!data) {
       res.status(500).send();
     }
-    res.send(data);
+    res.status(200).send(data);
   }).catch((err) => {
     res.status(400).send();
   });

@@ -72,13 +72,37 @@
 }
 
 
+.container {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-between;
+}
 
+.container .left {
+  margin-top: 30px;
+  border-right: 2px solid #e3e3e3;
+}
 
+.container .right {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 30px;
+}
 
+.container > div {
+  flex: 1;
+}
 
+.right ul li{
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
 
-
-
+.right ul li:hover {
+  color: #9E9E9E;
+}
 
 
 
