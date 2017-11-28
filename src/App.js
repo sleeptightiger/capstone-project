@@ -13,6 +13,7 @@ import {
 
 import Home from './components/Home';
 import FoodList from './components/FoodList';
+import MyList from './components/MyList';
 import LoginButton from './components/account/LoginButton';
 import LogoutButton from './components/account/LogoutButton';
 
@@ -24,7 +25,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentUser: null
+      currentUser: null,
+      currentUserUID: null
     };
   }
 
@@ -32,7 +34,8 @@ class App extends Component {
     auth.onAuthStateChanged(newUser => {
       if (newUser) {
         this.setState({
-          currentUser: newUser
+          currentUser: newUser,
+          currentUserUID: newUser.uid
         });
         console.log('Logged in');
       } else {
@@ -70,11 +73,13 @@ class App extends Component {
               <h1 className="title">Nutrition App</h1>
               <NavLink className="navlink" exact to= '/'>Home</NavLink>
               <NavLink className="navlink" to= '/foodlist'>Food List</NavLink>
+              <NavLink className="navlink" to= '/mylist'>My List</NavLink>
               {this._toggleAuthButton()}
             </nav>
             <Switch>
               <Route exact path="/" component={() => <Home />} />
-              <Route path="/foodlist" component={() => <FoodList currentUser={this.state.currentUser}/>} />
+              <Route path="/foodlist" component={() => <FoodList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser}/>} />
+              <Route path="/mylist" component={() => <MyList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser}/>} />
             </Switch>
           </div>
         </Router>

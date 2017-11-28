@@ -15,6 +15,18 @@ class FoodList extends Component {
     }
 
     this._getFoodResults = this._getFoodResults.bind(this);
+    this._addItem = this._addItem.bind(this);
+  }
+
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.currentUserUID !== nextProps.currentUserUID) {
+      return true;
+    }
+    if (this.state.food !== nextState.food) {
+      return true;
+    }
+    return false;
   }
 
   _getFoodResults(e) {
@@ -78,8 +90,9 @@ _addItem(e) {
     let addString = storedValues[i].split(': ')
     parsedValues.push(addString[1]);
   }
-  axios.post('/test', {
-    data: parsedValues
+  axios.post('/foodList', {
+    data: parsedValues,
+    userID: this.props.currentUserUID
   })
   .then((res) => {
     console.log('submitted successfully');
