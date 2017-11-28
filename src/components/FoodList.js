@@ -16,22 +16,6 @@ class FoodList extends Component {
   }
 
 
-  // componentDidMount() {
-  //   this.ref = database.ref('/foodlist');
-  //   fetch('/food/beef', {
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       'Accept': 'application/json'
-  //     }
-  //   })
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     this.setState({
-  //       food: data.common
-  //     })
-  //   })
-  // }
-
   _getFoodResults(e) {
     e.preventDefault();
     let searchTerm = this.inputBox.value
@@ -44,9 +28,9 @@ class FoodList extends Component {
     .then((res) => res.json())
     .then((data) => {
       this._getNutrients(data.branded)
-      // this.setState({
-      //   food: data.branded
-      // })
+      this.setState({
+        food: data.branded
+      })
     })
   }
 
@@ -89,10 +73,10 @@ class FoodList extends Component {
     var mapped = this.state.food.map((data, i) => {
       let food = this.state.food[i];
       return (
-        <div key={i}>
-          <h1>Name: {_.startCase(food.food_name)}</h1>
+        <div key={i} className="results">
+          <h1>{_.startCase(food.food_name)}</h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
-          <p>{food.nix_item_id}</p>
+          <p>Calories: {food.nf_calories}</p>
         </div>
       )
     })
@@ -100,7 +84,7 @@ class FoodList extends Component {
     if (this.props.currentUser) {
       return (
         <div>
-          <form onSubmit={this._getFoodResults}>
+          <form className="searchForm" onSubmit={this._getFoodResults}>
             <label htmlFor="query">Search: </label>
             <input type="text" name="query" ref={(input) => this.inputBox = input}/>
             <input type="submit" value="submit" />
