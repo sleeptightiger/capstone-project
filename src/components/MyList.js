@@ -22,23 +22,24 @@ class MyList extends Component {
           data
         })
       })
+      setTimeout(() => {
+        this._activeDate();
+      }, 800)
+
   }
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   if (this.props.currentUserUID !== nextProps.currentUserUID) {
-  //     return true;
-  //   }
-  //   if (this.state.data !== nextState.data) {
-  //     return true;
-  //   }
-  //   return false;
-  // }
+  _activeDate() {
+    let dayOfWeek = new Date();
+    dayOfWeek = dayOfWeek.getDay();
+    dayOfWeek += 1;
+    let dayElement = document.querySelector(`.days > li:nth-child(${dayOfWeek})`);
+    dayElement.classList.add("activeDay");
+  }
 
 
-
-// 3GFOi5Iwo6XG4EXOFzq5HgAtREG3
 
   render() {
+
 
     if (!this.state.data) {
       return (<div><h1>Loading..</h1></div>);
@@ -75,7 +76,8 @@ class MyList extends Component {
         </div>
         <div className="right">
           <div>
-            <ul>
+            <ul className="days">
+              <li>Sunday</li>
               <li>Monday</li>
               <li>Tuesday</li>
               <li>Wednesday</li>
