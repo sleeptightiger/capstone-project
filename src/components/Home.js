@@ -19,11 +19,23 @@ class Home extends Component {
 
   _getPhoneNumber(e) {
     e.preventDefault();
-    axios.get(`/api/twilio/${this.phoneNumber.value}`)
+
+    axios.get(`https://numvalidate.com/api/validate?number=${this.phoneNumber.value}&countryCode=US`)
     .then((res) => {
-      console.log('SMS sent successfully.');
+      if (!res.data.data.valid) {
+        alert('Invalid Phone Number');
+      }
     })
-    this.phoneNumber.value = ''
+    .then(() => {
+      axios.get(`/api/twilio/${this.phoneNumber.value}`)
+      .then((res) => {
+        console.log('SMS sent successfully.');
+      })
+      this.phoneNumber.value = ''
+    })
+    .catch((err) => {
+      new Error('error', err);
+    })
   }
 
   render() {
@@ -31,7 +43,7 @@ class Home extends Component {
       <div className="home">
         <h1>Login and track your macros!</h1>
         <h1>Enter your phone number to get fitness updates</h1>
-        <form onSubmit={this._getPhoneNumber}>
+        <form onSubmit={this._getPhoneNumber} className="numform">
           <div id="input_wrapper">
             <p>
               <label htmlFor="login">Phone Number</label>

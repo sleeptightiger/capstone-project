@@ -160,14 +160,26 @@ app.get('/twilio/:num', (req, res) => {
   client.messages.create({
       body: 'Matt\'s Nutrition App, you will get fitness news from here on out. If you want to opt-out please reply STOP',
       to: req.params.num,
-      from: process.env.TWILIO_NUMBER
+      from: process.env.TWILIO_NUMBER,
+      mediaUrl: 'https://media.giphy.com/media/l2JhB4Sp6hz37lU1W/giphy.gif'
   })
   .then((message) => console.log(message.sid));
   res.send('I think it worked?');
 
 })
 
+app.get('/test', (req, res) => {
 
+
+    axios.get('https://numvalidate.com/api/validate?number=9568730660&countryCode=US')
+    .then((res) => {
+      console.log(res.data.data.valid)
+    })
+    .catch((err) => {
+      new Error('error', err);
+    })
+    // res.send('yay');
+})
 
 
 
