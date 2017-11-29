@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 
-const index = require('./models/index.js');
+const index = require('./controllers/index');
 
 // Log HTTP Requests
 app.use(morgan('combined'))

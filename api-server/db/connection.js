@@ -16,7 +16,7 @@ mongoose.connection.openUri(process.env.MONGODB_URI || process.env.DB_MONGO_URI_
 
 
 
-const Food = require('../models/food.js');
+const Food = require('../models/index.js');
 
 
 module.exports = {

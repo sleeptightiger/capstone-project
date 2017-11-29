@@ -17,6 +17,7 @@
     "mongodb": "^2.2.33",
     "mongoose": "^4.13.5",
     "morgan": "^1.9.0",
-    "nutritionix": "^0.6.1"
+    "nutritionix": "^0.6.1",
+    "twilio": "^3.10.0"
   }
 }
