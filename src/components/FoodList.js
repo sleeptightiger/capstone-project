@@ -40,7 +40,7 @@ class FoodList extends Component {
       if (searchTerm === 'beef' || searchTerm === 'ground beef') {
         fetchUrl = 'beefList'
       }
-      fetch(`/${fetchUrl}`)
+      fetch(`/api/${fetchUrl}`)
       .then((res) => res.json())
       .then((data) => {
         // console.log('Data', data)
@@ -51,7 +51,7 @@ class FoodList extends Component {
       })
     }
     else {
-      fetch(`/instantSearch/${searchTerm}`)
+      fetch(`/api/instantSearch/${searchTerm}`)
         .then((res) => res.json())
         .then((data) => {
           this.setState({
@@ -92,7 +92,7 @@ _addItem(e) {
   }
   let dayOfWeek = new Date();
   dayOfWeek = dayOfWeek.getDay();
-  axios.post('/foodList', {
+  axios.post('/api/foodList', {
     data: parsedValues,
     userID: this.props.currentUserUID,
     dayOfWeek: dayOfWeek

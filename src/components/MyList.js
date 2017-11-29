@@ -18,7 +18,7 @@ class MyList extends Component {
 
 
   componentDidMount() {
-    fetch(`/foodList/${this.props.currentUserUID}`)
+    fetch(`/api/foodList/${this.props.currentUserUID}`)
     .then((res) => res.json())
     .then((data) => {
       this.setState({
@@ -54,7 +54,7 @@ class MyList extends Component {
         this.setState({
           day: e.target.textContent
         })
-        axios.get(`/foodList/${this.props.currentUserUID}/${day}`)
+        axios.get(`/api/foodList/${this.props.currentUserUID}/${day}`)
           .then((response) => {
             this.setState({
               data: response.data
