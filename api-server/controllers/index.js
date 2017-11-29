@@ -158,7 +158,7 @@ app.get('/twilio/:num', (req, res) => {
   var client = new twilio(accountSid, authToken);
 
   client.messages.create({
-      body: 'Yay!',
+      body: 'Matt\'s Nutrition App, you will get fitness news from here on out. If you want to opt-out please reply STOP',
       to: req.params.num,
       from: process.env.TWILIO_NUMBER
   })
