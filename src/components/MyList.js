@@ -78,9 +78,9 @@ class MyList extends Component {
     if (data) {
       data.forEach((value) => {
         totalCal += Math.ceil(value.calories);
-        totalCarbs += value.carbohydrates;
-        totalFat += value.fat;
-        totalProtein += value.protein;
+        totalCarbs += Math.ceil(value.carbohydrates);
+        totalFat += Math.ceil(value.fat);
+        totalProtein += Math.ceil(value.protein);
       })
 
 

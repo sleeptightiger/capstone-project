@@ -51,19 +51,44 @@ app.get('/nutrients/:id', (req, res) => {
 
 
 
-app.get('/natural', (req, res) => {
-  var ingredients = [
-    '3 oz beef'
-  ];
+app.get('/natural/:ingredients', (req, res) => {
+  // let ingredients = ['3 oz beef',
+  //     '3 oz chicken']
+  let ingredients = req.params.ingredients;
+  console.log(ingredients)
 
-  nutritionix.natural(ingredients.join('\n'))
-    .then((successHandler, errorHandler) => {
-      console.log(successHandler)
-      res.status(200).send(successHandler);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  axios({
+  method: 'post',
+  url: 'https://trackapi.nutritionix.com/v2/natural/nutrients',
+  headers: {
+    'x-app-id': process.env.NUTRITION_APP_ID,
+    'x-app-key': process.env.NUTRITION_APP_KEY,
+    'x-remote-user-id': process.env.REMOTE_USER_ID
+  },
+  data: {
+    query: ingredients
+  }
+}).then((data) => {
+  console.log(data.data);
+  res.send(data.data)
+})
+
+
+
+
+  // nutritionix.natural(ingredients)
+  //   .then((successHandler, errorHandler) => {
+  //     console.log(successHandler)
+  //     res.status(200).send(successHandler);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+
+  // axios.post('https://trackapi.nutritionix.com/v2/natural/nutrients', { headers })
+  // .then((res) => {
+  //   console.log(res)n
+  // })
 
 
 })
@@ -166,19 +191,6 @@ app.get('/twilio/:num', (req, res) => {
   .then((message) => console.log(message.sid));
   res.send('I think it worked?');
 
-})
-
-app.get('/test', (req, res) => {
-
-
-    axios.get('https://numvalidate.com/api/validate?number=9568730660&countryCode=US')
-    .then((res) => {
-      console.log(res.data.data.valid)
-    })
-    .catch((err) => {
-      new Error('error', err);
-    })
-    // res.send('yay');
 })
 
 

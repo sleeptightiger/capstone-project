@@ -16,6 +16,7 @@ class FoodList extends Component {
 
     this._getFoodResults = this._getFoodResults.bind(this);
     this._addItem = this._addItem.bind(this);
+    this._getNaturalResults = this._getNaturalResults.bind(this);
   }
 
 
@@ -62,49 +63,57 @@ class FoodList extends Component {
 
   }
 
+  _getNaturalResults(e) {
+    e.preventDefault();
 
-  // _getNutritionInfoId(data) {
-  //   let nutritionInfoId = data.map((data, i) => {
-  //     return data.nix_item_id;
-  //   })
-  //   console.log(nutritionInfoId);
-  // }
+    let ingredients = this.naturalSearch.value;
+    console.log(ingredients)
+    axios.get(`/api/natural/${ingredients}`)
+    .then((res) => {
+      console.log('API Natural Response', res.data.foods);
+      this.setState({
+        food: res.data.foods
+      })
+    })
 
-_addItem(e) {
-  let surroundingDiv = e.target.parentNode.parentNode.childNodes
 
-  let storedValues = []
-  surroundingDiv.forEach((element) => {
-    // console.log(element.textContent)
-    storedValues.push(element.textContent)
-  })
-
-  let parsedValues = []
-  parsedValues.push(storedValues[0]);
-  let unitString = JSON.stringify(storedValues[1].split(':').splice(1,1));
-  unitString = unitString.split(' ');
-  parsedValues.push(unitString[1]);
-  parsedValues.push(unitString[2].replace(/"]/i, ''));
-
-  for (let i = 2; i < storedValues.length; i++) {
-    let addString = storedValues[i].split(': ')
-    parsedValues.push(addString[1]);
   }
-  let dayOfWeek = new Date();
-  dayOfWeek = dayOfWeek.getDay();
-  axios.post('/api/foodList', {
-    data: parsedValues,
-    userID: this.props.currentUserUID,
-    dayOfWeek: dayOfWeek
-  })
-  .then((res) => {
-    console.log('submitted successfully');
-  })
-  .catch((err) => {
-    console.log('error while posting', err);
-  })
 
-}
+  _addItem(e) {
+    let surroundingDiv = e.target.parentNode.parentNode.childNodes
+
+    let storedValues = []
+    surroundingDiv.forEach((element) => {
+      // console.log(element.textContent)
+      storedValues.push(element.textContent)
+    })
+
+    let parsedValues = []
+    parsedValues.push(storedValues[0]);
+    let unitString = JSON.stringify(storedValues[1].split(':').splice(1,1));
+    unitString = unitString.split(' ');
+    parsedValues.push(unitString[1]);
+    parsedValues.push(unitString[2].replace(/"]/i, ''));
+
+    for (let i = 2; i < storedValues.length; i++) {
+      let addString = storedValues[i].split(': ')
+      parsedValues.push(addString[1]);
+    }
+    let dayOfWeek = new Date();
+    dayOfWeek = dayOfWeek.getDay();
+    axios.post('/api/foodList', {
+      data: parsedValues,
+      userID: this.props.currentUserUID,
+      dayOfWeek: dayOfWeek
+    })
+    .then((res) => {
+      console.log('submitted successfully');
+    })
+    .catch((err) => {
+      console.log('error while posting', err);
+    })
+
+  }
 
   render() {
 
@@ -136,6 +145,13 @@ _addItem(e) {
             <h1>Search any food!</h1>
             <input type="text" name="query" ref={(input) => this.searchBox = input}/>
             <input type="submit" value="Get Data" />
+          </form>
+          <form className="searchForm" onSubmit={this._getNaturalResults}>
+            <h1>Natural Search</h1>
+            <h2>Try queries like:</h2>
+            <h3>"for breakfast i ate 2 eggs, bacon, and french toast"</h3>
+            <input type="text" ref={(input) => this.naturalSearch = input} />
+            <input type="submit" value="Submit!" />
           </form>
           {mapped}
         </div>
