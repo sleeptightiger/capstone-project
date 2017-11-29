@@ -24,6 +24,7 @@ class MyList extends Component {
       this.setState({
         data
       })
+      this._addListener();
     })
   }
 
@@ -36,17 +37,12 @@ class MyList extends Component {
       return true;
     }
     if (this.state.data !== nextState.data) {
-      return false;
+      return true;
     }
     return false;
   }
 
 
-  componentDidUpdate(prevProps, prevState) {
-  if (prevState.data !== this.state.data) {
-    this._addListener();
-  }
-}
 
 
   _addListener() {
@@ -64,12 +60,6 @@ class MyList extends Component {
               data: response.data
             })
           })
-      })
-    })
-    console.log('hello')
-    lists.forEach((element) => {
-      element.removeEventListener('click', () => {
-        console.log('removed')
       })
     })
   }
