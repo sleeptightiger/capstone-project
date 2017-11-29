@@ -9,7 +9,7 @@ class MyList extends Component {
     super(props);
 
     this.state = {
-      data: []
+      data: null,
     }
   }
 
@@ -22,24 +22,89 @@ class MyList extends Component {
           data
         })
       })
-      setTimeout(() => {
-        this._activeDate();
-      }, 800)
-
   }
 
-  _activeDate() {
-    let dayOfWeek = new Date();
-    dayOfWeek = dayOfWeek.getDay();
-    dayOfWeek += 1;
-    let dayElement = document.querySelector(`.days > li:nth-child(${dayOfWeek})`);
-    dayElement.classList.add("activeDay");
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.currentUserUID !== nextProps.currentUserUID) {
+      return true;
+    }
+    if (this.state.data !== nextState.data) {
+      return true;
+    }
+    return false;
   }
+
+
+
+  // _activeDate() {
+  //   let dayOfWeek = new Date();
+  //   dayOfWeek = dayOfWeek.getDay();
+  //   dayOfWeek += 1;
+  //   let dayElement = document.querySelector(`.days li:nth-child(${dayOfWeek})`);
+  //   dayElement.classList.add("activeDay");
+  //   // dayElement.setAttribute('class', 'activeDay')
+  // }
+
+  //   _activeDate() {
+  //     var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+  //     let dayOfWeek = new Date();
+  //     dayOfWeek = dayOfWeek.getDay();
+  //     this.setState({
+  //       day: days[dayOfWeek]
+  //     })
+  // }
+
+
+
+  _calculateMacros() {
+    let data = this.state.data;
+    let totalValues = {};
+    let totalCal = 0;
+    let totalCarbs = 0;
+    let totalFat = 0;
+    let totalProtein = 0;
+    if (data) {
+      data.forEach((value) => {
+        totalCal += value.calories;
+        totalCarbs += value.carbohydrates;
+        totalFat += value.fat;
+        totalProtein += value.protein;
+      })
+
+
+      let totalCalCarbs = totalCarbs * 4;
+      let totalCalFat = totalFat * 9;
+      let totalCalProtein = totalProtein * 4;
+
+      totalValues = {
+        calories: totalCal,
+        carbs: totalCarbs,
+        fat: totalFat,
+        protein: totalProtein,
+        totalCalCarbs,
+        totalCalFat,
+        totalCalProtein
+      }
+    }
+    return totalValues;
+  }
+
+
+  // componentWillUnmount() {
+  //   let lists = document.querySelector('li');
+  //   console.log(lists);
+
+  //   lists.classList.remove('activeDay');
+  //   console.log(lists);
+
+  // }
 
 
 
   render() {
 
+    let calculatedMacros = this._calculateMacros();
 
     if (!this.state.data) {
       return (<div><h1>Loading..</h1></div>);
@@ -47,6 +112,7 @@ class MyList extends Component {
     else {
       var infoMapped = this.state.data.map((element, i) => {
         let nutInfo = this.state.data[i];
+
         return (
           <div key={i} className="results">
             <h1>{_.startCase(nutInfo.name)}</h1>
@@ -58,7 +124,9 @@ class MyList extends Component {
           </div>
         )
       })
+      this._calculateMacros();
     }
+
 
 
 
@@ -86,8 +154,15 @@ class MyList extends Component {
               <li>Saturday</li>
             </ul>
           </div>
-          <div>
-            <p>Data here</p>
+          <p>{this.props.currentDay} Daily Totals</p>
+          <div className="totals">
+            <p>Total Fat: <span className="calcValues">{calculatedMacros.fat} grams</span></p>
+            <p>Total Carbohydrates: <span className="calcValues">{calculatedMacros.carbs} grams</span></p>
+            <p>Total Protein: <span className="calcValues">{calculatedMacros.protein} grams</span></p>
+            <p>Total Calories: <span className="calcValues">{calculatedMacros.calories} calories</span></p>
+            <p>Total Calories from Fat: <span className="calcValues">{calculatedMacros.totalCalFat} calories</span></p>
+            <p>Total Calories from Carbohydrates: <span className="calcValues">{calculatedMacros.totalCalCarbs} calories</span></p>
+            <p>Total Calories from Protein: <span className="calcValues">{calculatedMacros.totalCalProtein} calories</span></p>
           </div>
         </div>
       </div>

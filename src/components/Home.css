@@ -109,9 +109,15 @@
 }
 
 
+.totals p {
+  font-size: 22px;
+  font-weight: bold;
+}
 
-
-
+.calcValues {
+  font-size: 18px;
+  font-weight: normal;
+}
 
 
 

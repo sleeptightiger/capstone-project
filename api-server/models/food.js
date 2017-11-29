@@ -10,6 +10,10 @@ let foodSchema = new Schema({
     type: String,
     required: true
   },
+  dayOfWeek: {
+    type: Number,
+    required: true
+  },
   servingSize: Number,
   unit: String,
   calories: Number,

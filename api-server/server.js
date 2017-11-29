@@ -107,11 +107,12 @@ app.get('/chickenList', (req, res) => {
 app.post('/foodList', (req, res) => {
   let getBody = req.body.data;
   var userID = req.body.userID;
-
+  let getDayOfWeek = req.body.dayOfWeek;
 
   let nutrtionFacts = new db.Food({
     user: userID,
     name: getBody[0],
+    dayOfWeek: getDayOfWeek,
     servingSize: getBody[1],
     unit: getBody[2],
     calories: getBody[3],

@@ -26,11 +26,14 @@ class App extends Component {
 
     this.state = {
       currentUser: null,
-      currentUserUID: null
+      currentUserUID: null,
+      currentDay: '' || 'Sunday'
     };
+
+    this._activeDate = this._activeDate.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     auth.onAuthStateChanged(newUser => {
       if (newUser) {
         this.setState({
@@ -45,6 +48,7 @@ class App extends Component {
         console.log('logged out');
       }
     });
+    this._activeDate();
   }
 
 
@@ -59,7 +63,14 @@ class App extends Component {
     }
   }
 
-
+  _activeDate() {
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+      let dayOfWeek = new Date();
+      dayOfWeek = dayOfWeek.getDay();
+      this.setState({
+        currentDay: days[dayOfWeek]
+      })
+  }
 
 
 
@@ -78,8 +89,8 @@ class App extends Component {
             </nav>
             <Switch>
               <Route exact path="/" component={() => <Home />} />
-              <Route path="/foodlist" component={() => <FoodList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser}/>} />
-              <Route path="/mylist" component={() => <MyList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser}/>} />
+              <Route path="/foodlist" component={() => <FoodList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay}/>} />
+              <Route path="/mylist" component={() => <MyList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay} />} />
             </Switch>
           </div>
         </Router>

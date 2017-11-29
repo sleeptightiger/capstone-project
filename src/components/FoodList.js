@@ -90,9 +90,12 @@ _addItem(e) {
     let addString = storedValues[i].split(': ')
     parsedValues.push(addString[1]);
   }
+  let dayOfWeek = new Date();
+  dayOfWeek = dayOfWeek.getDay();
   axios.post('/foodList', {
     data: parsedValues,
-    userID: this.props.currentUserUID
+    userID: this.props.currentUserUID,
+    dayOfWeek: dayOfWeek
   })
   .then((res) => {
     console.log('submitted successfully');
