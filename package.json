@@ -11,6 +11,7 @@
     "nutritionix": "^0.6.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-ga": "^2.3.5",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },

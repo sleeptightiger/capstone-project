@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './components/Home.css';
 
+// Google Analytics
+import ReactGA from 'react-ga';
+
+
 
 import {
   BrowserRouter as Router,
@@ -48,6 +52,9 @@ class App extends Component {
       }
     });
     this._activeDate();
+
+    ReactGA.initialize('UA-28151241-8');
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
 
@@ -77,6 +84,7 @@ class App extends Component {
 
 
   render() {
+
     return (
       <div>
         <Router>
