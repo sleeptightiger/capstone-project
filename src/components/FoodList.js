@@ -67,10 +67,9 @@ class FoodList extends Component {
     e.preventDefault();
 
     let ingredients = this.naturalSearch.value;
-    console.log(ingredients)
     axios.get(`/api/natural/${ingredients}`)
     .then((res) => {
-      console.log('API Natural Response', res.data.foods);
+      // console.log('API Natural Response', res.data.foods);
       this.setState({
         food: res.data.foods
       })
@@ -115,6 +114,7 @@ class FoodList extends Component {
 
   }
 
+
   render() {
 
     var mapped = this.state.food.map((data, index) => {
@@ -130,30 +130,48 @@ class FoodList extends Component {
         <div key={index} className="results">
           <h1>{_.startCase(food.food_name)}<i onClick={this._addItem} className="fa fa-plus" aria-hidden="true"></i></h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
-          <p>Calories: {food.nf_calories || 0}</p>
-          <p>Protein: {food.nf_protein || 0}</p>
-          <p>Carbohydrates: {food.nf_total_carbohydrate || 0}</p>
-          <p>Fat: {food.nf_total_fat || 0}</p>
+          <p>Calories: {Math.ceil(food.nf_calories) || 0}</p>
+          <p>Protein: {Math.ceil(food.nf_protein) || 0} g</p>
+          <p>Carbohydrates: {Math.ceil(food.nf_total_carbohydrate) || 0} g</p>
+          <p>Fat: {Math.ceil(food.nf_total_fat) || 0} g</p>
         </div>
       )
     })
 
+
+
     if (this.props.currentUser) {
       return (
         <div>
-          <form className="searchForm" onSubmit={this._getFoodResults}>
-            <h1>Search any food!</h1>
-            <input type="text" name="query" ref={(input) => this.searchBox = input}/>
-            <input type="submit" value="Get Data" />
-          </form>
-          <form className="searchForm" onSubmit={this._getNaturalResults}>
-            <h1>Natural Search</h1>
-            <h2>Try queries like:</h2>
-            <h3>"for breakfast i ate 2 eggs, bacon, and french toast"</h3>
-            <input type="text" ref={(input) => this.naturalSearch = input} />
-            <input type="submit" value="Submit!" />
-          </form>
-          {mapped}
+          <div className="searchForms">
+            <div id="wrap">
+              <div id="broke">
+                <div className="error"><p>Sorry, that doesn't rhyme with orange.</p><a href="#" className="close">x</a>
+                </div>
+                <form className="form" onSubmit={this._getFoodResults}>
+                  <h3>Instant Search</h3>
+                    <input required id="rhyme" name="rhyme" type="text" placeholder='"chicken", "ground beef", "pizza"' ref={(input) => this.searchBox = input} />
+                    <button className="call" type="submit">Search!</button>
+                </form>
+
+              </div>
+            </div>
+            <div id="wrap">
+              <div id="broke">
+                <div className="error"><p>Sorry, that doesn't rhyme with orange.</p><a href="#" className="close">x</a>
+                </div>
+                <form className="form" onSubmit={this._getNaturalResults}>
+                  <h3>Natural Search</h3>
+                    <input required id="rhyme" name="rhyme" type="text" placeholder='"for breakfast i ate 2 eggs, bacon, and french toast"' ref={(input) => this.naturalSearch = input} />
+
+                    <button className="call" type="submit">Search!</button>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        {mapped}
         </div>
       );
     }

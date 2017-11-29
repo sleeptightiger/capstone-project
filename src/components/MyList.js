@@ -125,10 +125,10 @@ class MyList extends Component {
           <div key={i} className="results">
             <h1>{_.startCase(nutInfo.name)}</h1>
             <p>Serving Size: {nutInfo.servingSize} {nutInfo.unit}</p>
-            <p>Calories: {nutInfo.calories || 0}</p>
-            <p>Protein: {nutInfo.protein|| 0}</p>
-            <p>Carbohydrates: {nutInfo.carbohydrates || 0}</p>
-            <p>Fat: {nutInfo.fat || 0}</p>
+            <p>Calories: {Math.ceil(nutInfo.calories) || 0}</p>
+            <p>Protein: {Math.ceil(nutInfo.protein)|| 0} g</p>
+            <p>Carbohydrates: {Math.ceil(nutInfo.carbohydrates) || 0} g</p>
+            <p>Fat: {Math.ceil(nutInfo.fat) || 0} g</p>
           </div>
         )
       })

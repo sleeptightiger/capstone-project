@@ -13,8 +13,6 @@ import {
 import Home from './components/Home';
 import FoodList from './components/FoodList';
 import MyList from './components/MyList';
-import Test from './components/Test';
-import NaturalSearch from './components/NaturalSearch';
 import LoginButton from './components/account/LoginButton';
 import LogoutButton from './components/account/LogoutButton';
 
@@ -94,8 +92,6 @@ class App extends Component {
               <Route exact path="/" component={() => <Home />} />
               <Route path="/foodlist" component={() => <FoodList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay}/>} />
               <Route path="/mylist" component={() => <MyList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay} />} />
-              <Route path="/test" component={() => <Test currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay} />} />
-              <Route path="/naturalsearch" component={() => <NaturalSearch currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay} />} />
             </Switch>
           </div>
         </Router>
