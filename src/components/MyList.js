@@ -11,17 +11,19 @@ class MyList extends Component {
     this.state = {
       data: null,
     }
+
   }
 
 
   componentDidMount() {
     fetch(`/foodList/${this.props.currentUserUID}`)
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({
-          data
-        })
+    .then((res) => res.json())
+    .then((data) => {
+      this.setState({
+        data
       })
+    })
+
   }
 
 

@@ -40,7 +40,7 @@ class App extends Component {
           currentUser: newUser,
           currentUserUID: newUser.uid
         });
-        console.log('Logged in', newUser);
+        console.log('Logged in');
       } else {
         this.setState({
           currentUser: null
@@ -68,7 +68,8 @@ class App extends Component {
       let dayOfWeek = new Date();
       dayOfWeek = dayOfWeek.getDay();
       this.setState({
-        currentDay: days[dayOfWeek]
+        currentDay: days[dayOfWeek],
+        currentDayInt: dayOfWeek
       })
   }
 

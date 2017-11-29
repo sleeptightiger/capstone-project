@@ -131,8 +131,12 @@ app.post('/foodList', (req, res) => {
 
 app.get('/foodList/:id', (req, res) => {
   var userId = req.params.id;
+
+  let dayOfWeek = new Date();
+  dayOfWeek = dayOfWeek.getDay();
   db.Food.find({
-    user: userId
+    user: userId,
+    dayOfWeek
   }).then((data) => {
     if(!data) {
       res.status(500).send();
