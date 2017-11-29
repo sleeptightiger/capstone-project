@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 
 import _ from 'lodash';
+import axios from 'axios'
 
 
 class MyList extends Component {
@@ -10,6 +11,7 @@ class MyList extends Component {
 
     this.state = {
       data: null,
+      day: null || this.props.currentDay
     }
 
   }
@@ -23,7 +25,6 @@ class MyList extends Component {
         data
       })
     })
-
   }
 
 
@@ -31,31 +32,49 @@ class MyList extends Component {
     if (this.props.currentUserUID !== nextProps.currentUserUID) {
       return true;
     }
-    if (this.state.data !== nextState.data) {
+    if (this.props.currentDay !== nextProps.currentUserUID) {
       return true;
+    }
+    if (this.state.data !== nextState.data) {
+      return false;
     }
     return false;
   }
 
 
+  componentDidUpdate(prevProps, prevState) {
+  if (prevState.data !== this.state.data) {
+    this._addListener();
+  }
+}
 
-  // _activeDate() {
-  //   let dayOfWeek = new Date();
-  //   dayOfWeek = dayOfWeek.getDay();
-  //   dayOfWeek += 1;
-  //   let dayElement = document.querySelector(`.days li:nth-child(${dayOfWeek})`);
-  //   dayElement.classList.add("activeDay");
-  //   // dayElement.setAttribute('class', 'activeDay')
-  // }
 
-  //   _activeDate() {
-  //     var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
-  //     let dayOfWeek = new Date();
-  //     dayOfWeek = dayOfWeek.getDay();
-  //     this.setState({
-  //       day: days[dayOfWeek]
-  //     })
-  // }
+  _addListener() {
+    let lists = document.querySelectorAll('li');
+
+    lists.forEach((element) => {
+      element.addEventListener('click', (e) => {
+        var day = e.target.id;
+        this.setState({
+          day: e.target.textContent
+        })
+        axios.get(`/foodList/${this.props.currentUserUID}/${day}`)
+          .then((response) => {
+            this.setState({
+              data: response.data
+            })
+          })
+      })
+    })
+    console.log('hello')
+    lists.forEach((element) => {
+      element.removeEventListener('click', () => {
+        console.log('removed')
+      })
+    })
+  }
+
+
 
 
 
@@ -68,16 +87,16 @@ class MyList extends Component {
     let totalProtein = 0;
     if (data) {
       data.forEach((value) => {
-        totalCal += value.calories;
+        totalCal += Math.ceil(value.calories);
         totalCarbs += value.carbohydrates;
         totalFat += value.fat;
         totalProtein += value.protein;
       })
 
 
-      let totalCalCarbs = totalCarbs * 4;
-      let totalCalFat = totalFat * 9;
-      let totalCalProtein = totalProtein * 4;
+      let totalCalCarbs = Math.ceil(totalCarbs * 4);
+      let totalCalFat = Math.ceil(totalFat * 9);
+      let totalCalProtein = Math.ceil(totalProtein * 4);
 
       totalValues = {
         calories: totalCal,
@@ -93,18 +112,15 @@ class MyList extends Component {
   }
 
 
-  // componentWillUnmount() {
-  //   let lists = document.querySelector('li');
-  //   console.log(lists);
 
-  //   lists.classList.remove('activeDay');
-  //   console.log(lists);
-
-  // }
 
 
 
   render() {
+
+    // setTimeout(() => {
+    //   this._addListener();
+    // }, 1500)
 
     let calculatedMacros = this._calculateMacros();
 
@@ -147,16 +163,16 @@ class MyList extends Component {
         <div className="right">
           <div>
             <ul className="days">
-              <li>Sunday</li>
-              <li>Monday</li>
-              <li>Tuesday</li>
-              <li>Wednesday</li>
-              <li>Thursday</li>
-              <li>Friday</li>
-              <li>Saturday</li>
+              <li id='0'>Sunday</li>
+              <li id='1'>Monday</li>
+              <li id='2'>Tuesday</li>
+              <li id='3'>Wednesday</li>
+              <li id='4'>Thursday</li>
+              <li id='5'>Friday</li>
+              <li id='6'>Saturday</li>
             </ul>
           </div>
-          <p>{this.props.currentDay} Daily Totals</p>
+          <p>{this.state.day} Daily Totals</p>
           <div className="totals">
             <p>Total Fat: <span className="calcValues">{calculatedMacros.fat} grams</span></p>
             <p>Total Carbohydrates: <span className="calcValues">{calculatedMacros.carbs} grams</span></p>
@@ -170,6 +186,7 @@ class MyList extends Component {
       </div>
     );
   }
+
 }
 
 export default MyList;

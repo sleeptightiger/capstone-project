@@ -147,6 +147,24 @@ app.get('/foodList/:id', (req, res) => {
   });
 });
 
+app.get('/foodList/:id/:day', (req, res) => {
+  var userId = req.params.id;
+  var dayOfWeek = req.params.day;
+  // let dayOfWeek = new Date();
+  // dayOfWeek = dayOfWeek.getDay();
+  db.Food.find({
+    user: userId,
+    dayOfWeek
+  }).then((data) => {
+    if(!data) {
+      res.status(500).send();
+    }
+    res.status(200).send(data);
+  }).catch((err) => {
+    res.status(400).send();
+  });
+});
+
 
 
 

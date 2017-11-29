@@ -15,6 +15,7 @@ class FoodList extends Component {
     }
 
     this._getFoodResults = this._getFoodResults.bind(this);
+    this._addItem = this._addItem.bind(this);
   }
 
 

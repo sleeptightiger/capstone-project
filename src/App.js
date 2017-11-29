@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './components/Home.css';
 
 
-
 import {
   BrowserRouter as Router,
   Route,
@@ -27,7 +26,7 @@ class App extends Component {
     this.state = {
       currentUser: null,
       currentUserUID: null,
-      currentDay: '' || 'Sunday'
+      currentDay: '' || 'Sunday',
     };
 
     this._activeDate = this._activeDate.bind(this);
@@ -71,6 +70,7 @@ class App extends Component {
         currentDay: days[dayOfWeek],
         currentDayInt: dayOfWeek
       })
+
   }
 
 
