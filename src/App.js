@@ -89,7 +89,7 @@ class App extends Component {
               {this._toggleAuthButton()}
             </nav>
             <Switch>
-              <Route exact path="/" component={() => <Home />} />
+              <Route exact path="/" component={() => <Home currentUser={this.state.currentUser} />} />
               <Route path="/foodlist" component={() => <FoodList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay}/>} />
               <Route path="/mylist" component={() => <MyList currentUserUID={this.state.currentUserUID} currentUser={this.state.currentUser} currentDay={this.state.currentDay} />} />
             </Switch>

@@ -40,6 +40,15 @@ class Home extends Component {
   }
 
   render() {
+
+    if (!this.props.currentUser) {
+      return (
+        <div className="home">
+          <h1>Login and track your macros!</h1>
+        </div>
+      );
+    }
+
     return (
       <div className="home">
         <h1>Login and track your macros!</h1>
