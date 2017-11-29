@@ -83,9 +83,10 @@ class FoodList extends Component {
 
     let storedValues = []
     surroundingDiv.forEach((element) => {
-      // console.log(element.textContent)
       storedValues.push(element.textContent)
     })
+
+    // console.log(storedValues)
 
     let parsedValues = []
     parsedValues.push(storedValues[0]);
@@ -131,9 +132,9 @@ class FoodList extends Component {
           <h1>{_.startCase(food.food_name)}<i onClick={this._addItem} className="fa fa-plus" aria-hidden="true"></i></h1>
           <p>Serving Size: {food.serving_qty} {food.serving_unit}</p>
           <p>Calories: {Math.ceil(food.nf_calories) || 0}</p>
-          <p>Protein: {Math.ceil(food.nf_protein) || 0} g</p>
-          <p>Carbohydrates: {Math.ceil(food.nf_total_carbohydrate) || 0} g</p>
-          <p>Fat: {Math.ceil(food.nf_total_fat) || 0} g</p>
+          <p>Protein: {Math.ceil(food.nf_protein) || 0}</p>
+          <p>Carbohydrates: {Math.ceil(food.nf_total_carbohydrate) || 0}</p>
+          <p>Fat: {Math.ceil(food.nf_total_fat) || 0}</p>
         </div>
       )
     })

@@ -3,8 +3,6 @@
 }
 
 
-
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -409,7 +407,6 @@ body #wrap .form {
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
   border: none 0px;
   padding: 10px;
 }

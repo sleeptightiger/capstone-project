@@ -27,6 +27,7 @@ class Home extends Component {
       }
     })
     .then(() => {
+      console.log(this.phoneNumber.value)
       axios.get(`/api/twilio/${this.phoneNumber.value}`)
       .then((res) => {
         console.log('SMS sent successfully.');
