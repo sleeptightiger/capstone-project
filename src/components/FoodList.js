@@ -133,9 +133,9 @@ _addItem(e) {
       return (
         <div>
           <form className="searchForm" onSubmit={this._getFoodResults}>
-            <label htmlFor="query">Search: </label>
+            <h1>Search any food!</h1>
             <input type="text" name="query" ref={(input) => this.searchBox = input}/>
-            <input type="submit" value="submit" />
+            <input type="submit" value="Get Data" />
           </form>
           {mapped}
         </div>
