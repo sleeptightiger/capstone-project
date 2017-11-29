@@ -33,6 +33,9 @@ class App extends Component {
       currentDay: '' || 'Sunday',
     };
 
+    ReactGA.initialize('UA-28151241-8');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     this._activeDate = this._activeDate.bind(this);
   }
 
@@ -53,8 +56,7 @@ class App extends Component {
     });
     this._activeDate();
 
-    ReactGA.initialize('UA-28151241-8');
-    ReactGA.pageview(window.location.pathname + window.location.search);
+
   }
 
 
@@ -80,7 +82,7 @@ class App extends Component {
 
   }
 
-
+// {this._toggleAuthButton()}
 
 
   render() {
@@ -91,10 +93,10 @@ class App extends Component {
           <div>
             <nav className="navbar">
               <h1 className="title">Nutrition App</h1>
-              <NavLink className="navlink" exact to= '/'>Home</NavLink>
+              <NavLink className="navlink" exact to= '/'>Home<i className="fa fa-home fa-2x" aria-hidden="true"></i></NavLink>
               <NavLink className="navlink" to= '/foodlist'>Food List</NavLink>
               <NavLink className="navlink" to= '/mylist'>My List</NavLink>
-              {this._toggleAuthButton()}
+              <NavLink className="navlink" to="/">{this._toggleAuthButton()}</NavLink>
             </nav>
             <Switch>
               <Route exact path="/" component={() => <Home currentUser={this.state.currentUser} />} />

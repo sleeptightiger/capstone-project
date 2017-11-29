@@ -24,8 +24,8 @@ class LoginButton extends Component {
 
   render() {
     return (
-      <div>
-        <p className="navlink" onClick={this._handleFacebook}>Facebook Login</p>
+      <div className="facebook">
+        <p onClick={this._handleFacebook}><i className="fa fa-facebook" aria-hidden="true"></i>Login</p>
       </div>
     )
   }

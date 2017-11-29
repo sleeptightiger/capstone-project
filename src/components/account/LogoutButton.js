@@ -10,7 +10,9 @@ class LogoutButton extends Component {
 
   render() {
     return (
-      <a className="navlink" onClick={this._handleLogout}>Logout</a>
+      <div>
+        <p onClick={this._handleLogout}>Logout</p>
+      </div>
     )
   }
 }
