@@ -92,7 +92,7 @@ class App extends Component {
           <div>
 
             <nav className="navbar">
-              <h1 className="title">Nutrition App</h1>
+              <h1 className="title"><i className="fa fa-cutlery" aria-hidden="true"></i>Nutrition App</h1>
               <NavLink className="navlink" exact to= '/'>Home<i className="fa fa-home fa-2x" aria-hidden="true"></i></NavLink>
               <NavLink className="navlink" to= '/foodlist'>Food List</NavLink>
               <NavLink className="navlink" to= '/mylist'>My List</NavLink>

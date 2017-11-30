@@ -335,8 +335,9 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
     color: #BBDEFB;
     text-decoration: none;
     cursor: pointer;
-    width: 150px;
+    width: 120px;
     margin-top: 10px;
+    text-align: center;
   }
 
   .navlink p {
@@ -344,8 +345,17 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
     margin: 0px;
   }
 
-  .navbar i {
+  .navlink .fa-home {
     display: none;
+  }
+
+  .title {
+    position: absolute;
+    margin: 0px;
+    margin-top: 8px;
+    padding: 0px;
+    left: 14%;
+    color: #1A237E;
   }
 
 
@@ -361,6 +371,11 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
     padding: 0px;
     left: 14%;
     color: #1A237E;
+  }
+
+  .title .fa {
+    color: #1A237E;
+    padding-right: 10px;
   }
 
   .home h1 {
@@ -398,7 +413,7 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
   .fa {
     padding-left: 20px;
     cursor: pointer;
-    color: #1E88E5;
+    color: green;
   }
 
   .days {
@@ -467,10 +482,17 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
 
 /* MOBILE */
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1400px) {
   .title {
-    display: none;
+    left: 4%;
   }
+
+  .searchForms {
+    width: 1280px;
+    margin-left: 0px;
+    padding-left: 150px;
+  }
+
 }
 
 @media only screen
