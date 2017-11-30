@@ -51,7 +51,6 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <h1>Login and track your macros!</h1>
         <h1>Enter your phone number to get fitness updates</h1>
         <form onSubmit={this._getPhoneNumber} className="numform">
           <div id="input_wrapper">

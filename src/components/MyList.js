@@ -162,7 +162,7 @@ class MyList extends Component {
               <li id='6'>Saturday</li>
             </ul>
           </div>
-          <p>{this.state.day} Daily Totals</p>
+          <p className="currentDay">{this.state.day} Daily Totals</p>
           <div className="totals">
             <p>Total Fat: <span className="calcValues">{calculatedMacros.fat} grams</span></p>
             <p>Total Carbohydrates: <span className="calcValues">{calculatedMacros.carbs} grams</span></p>

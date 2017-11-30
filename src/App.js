@@ -82,7 +82,6 @@ class App extends Component {
 
   }
 
-// {this._toggleAuthButton()}
 
 
   render() {
@@ -91,6 +90,7 @@ class App extends Component {
       <div>
         <Router>
           <div>
+
             <nav className="navbar">
               <h1 className="title">Nutrition App</h1>
               <NavLink className="navlink" exact to= '/'>Home<i className="fa fa-home fa-2x" aria-hidden="true"></i></NavLink>

@@ -147,8 +147,6 @@ class FoodList extends Component {
           <div className="searchForms">
             <div id="wrap">
               <div id="broke">
-                <div className="error"><p>Sorry, that doesn't rhyme with orange.</p><a href="#" className="close">x</a>
-                </div>
                 <form className="form" onSubmit={this._getFoodResults}>
                   <h3>Instant Search</h3>
                     <input required id="rhyme" name="rhyme" type="text" placeholder='"chicken", "ground beef", "pizza"' ref={(input) => this.searchBox = input} />
@@ -159,8 +157,6 @@ class FoodList extends Component {
             </div>
             <div id="wrap">
               <div id="broke">
-                <div className="error"><p>Sorry, that doesn't rhyme with orange.</p><a href="#" className="close">x</a>
-                </div>
                 <form className="form" onSubmit={this._getNaturalResults}>
                   <h3>Natural Search</h3>
                     <input required id="rhyme" name="rhyme" type="text" placeholder='"for breakfast i ate 2 eggs, bacon, and french toast"' ref={(input) => this.naturalSearch = input} />

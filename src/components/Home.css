@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+
+
 .home {
   text-align: center;
   border-right: 2px solid #e3e3e3;
@@ -7,59 +11,6 @@
   height: 1000px;
 }
 
-@media only screen and (min-device-width: 1200px) {
-  .navbar {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background-color: #1E88E5;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-
-  .navlink {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
-    line-height: 25px;
-    padding: 5px;
-    padding-bottom: 12px;
-    margin: 5px 20px;
-    background-color: #1E88E5;
-    border-radius: 4px;
-    color: #BBDEFB;
-    text-decoration: none;
-    cursor: pointer;
-    width: 150px;
-    margin-top: 10px;
-  }
-
-  .navlink p {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .navbar i {
-    display: none;
-  }
-
-
-  .navlink:hover {
-    transition: .3s color;
-    color: #FAFAFA;
-  }
-
-  .title {
-    left: 10px;
-    margin-top: 8px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15%;
-  }
-}
 
 
 
@@ -67,147 +18,8 @@
 
 
 
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .title {
-      display: none;
-    }
-
-    .navbar {
-      display: flex;
-      background-color: #1E88E5;
-      width: 100%;
-      list-style: none;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
-
-    .navlink {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      padding: 8px;
-      text-decoration: none;
-      border-radius: 4px;
-      color: #BBDEFB;
-      background-color: #1E88E5;
-    }
-
-    .navlink:nth-child(n+3) {
-      margin-top: 6px;
-      margin-left: 5px;
-    }
-
-    .navlink:nth-child(2) {
-
-    }
-
-    .navlink p {
-      padding: 0px;
-      margin: 0px;
-    }
-
-    .navbar i {
-      color: white;
-    }
-
-    .facebook p i {
-      padding-right: 6px;
-    }
-
-    /* My List Component */
-
-    #wrap {
-      width: 20px;
-    }
-
-  }
 
 
-.title>h1 {
-  margin-left: 4px;
-  font-family: 'Ubuntu', sans-serif;
-  color: #BBDEFB;
-  font-size: 16px;
-}
-
-.searchForms {
-  width: 100%;
-  /*display: inline-block;*/
-  margin-left: 24%;
-}
-
-
-
-.searchForm h1 {
-  margin-left: 15px;
-}
-
-.results {
-  text-align: left;
-  margin-left: 90px;
-}
-
-.results p {
-  color: green;
-  font-size: 20px;
-}
-
-.fa {
-  padding-left: 20px;
-  cursor: pointer;
-  color: #1E88E5;
-}
-
-
-.container {
-  display: flex;
-  /*align-items: center;*/
-  /*justify-content: space-between;*/
-}
-
-.container .left {
-  margin-top: 30px;
-  border-right: 2px solid #e3e3e3;
-}
-
-.container .right {
-  margin-top: 30px;
-  text-align: left;
-  margin-left: 30px;
-}
-
-.container > div {
-  flex: 1;
-}
-
-.right ul li{
-  display: inline-block;
-  padding: 0px 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.right ul li:hover {
-  color: #9E9E9E;
-}
-
-.activeDay {
-  color: #9E9E9E;
-}
-
-
-.totals p {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.calcValues {
-  font-size: 18px;
-  font-weight: normal;
-}
 
 
 
@@ -364,20 +176,7 @@ p {
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:800');
-/*body {
-  background: url(https://codepen.io/images/classy_fabric.png);
-  font-family: tahoma, arial, sans-serif;
-  padding: 30px;
-  width: 100%;
-}
-body a {
-  text-decoration: none;
-}
-body h3 {
-  color: #555;
-  text-shadow: 1px 1px 1px #fff;
-}*/
+
 body #wrap {
   /*margin: 0px auto;*/
   display: inline-block;
@@ -395,79 +194,7 @@ body #wrap #broke {
   right: 10px;
   top: 0px;
 }
-body #wrap #broke .error {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  background: rgba(255, 0, 0, 0);
-  color: #fff;
-  height: 0px;
-  margin: 10px 0;
-  overflow: hidden;
-  padding: 0 10px;
-  position: relative;
-  top: 0px;
-  width: 480px;
-}
-body #wrap #broke .error .close {
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-radius: 100%;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-transition: all 0 ease-out;
-  transition: all 0 ease-out;
-  -webkit-transition: all 0 ease-out;
-  background: rgba(255, 255, 255, 0);
-  color: rgba(255, 92, 38, 0);
-  display: block;
-  font-family: 'Dosis', arial, sans-serif;
-  font-size: 23px;
-  font-weight: bold;
-  height: 20px;
-  line-height: 14px;
-  padding: 0px 4px;
-  position: absolute;
-  right: 10px;
-  text-decoration: none;
-  top: 15px;
-  width: 20px;
-}
-body #wrap #broke:target .error {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  background: #ff5c26;
-  color: #fff;
-  margin: 10px 0;
-  min-height: 50px;
-  padding: 0 10px;
-  position: relative;
-  top: 0px;
-}
-body #wrap #broke:target .error .close {
-  -moz-transition: all 0 ease-out;
-  transition: all 0 ease-out;
-  -webkit-transition: all 0 ease-out;
-  background: rgba(255, 255, 255, 0.9);
-  color: #ff5c26;
-}
+
 body #wrap #broke:target button {
   background: #ff5c26;
   border-color: #ff5c26;
@@ -516,45 +243,7 @@ body #wrap .form button {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: middle;
 }
-body #wrap .form .flyout {
-  border-radius: 0px 4px 4px 0px;
-  -moz-border-radius: 0px 4px 4px 0px;
-  -webkit-border-radius: 0px 4px 4px 0px;
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -webkit-transition-delay: 0.4s;
-  -moz-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-  background: transparent;
-  font-size: 11px;
-  left: 0px;
-  padding: 7px 10px 8px 5px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  text-transform: uppercase;
-  top: -41px;
-  width: auto;
-  z-index: 2;
-}
-body #wrap .form .flyout > .nub {
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  -webkit-transition-delay: 0.4s;
-  -moz-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-  border: solid 14px;
-  border-color: transparent transparent transparent transparent;
-  display: block;
-  height: 0;
-  left: -28px;
-  position: absolute;
-  right: auto;
-  top: 0px;
-  width: 0;
-}
+
 body #wrap .form input[type="text"] {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -591,9 +280,6 @@ body #wrap .form input[type="text"]::-webkit-input-placeholder {
   -webkit-transition: all 0.3s ease-out;
   color: rgba(0, 0, 0, 0.2);
 }
-body #wrap .form input[type="text"]:focus + .flyout > .nub {
-  border-color: transparent #0080ff transparent transparent;
-}
 body #wrap .form input[type="text"]:focus + label {
   background: #0080ff;
   color: #fff;
@@ -624,11 +310,323 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
 /* MEDIA QUERIES */
 
 
+@media only screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #1E88E5;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  .navlink {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    line-height: 25px;
+    padding: 5px;
+    padding-bottom: 12px;
+    margin: 5px 20px;
+    background-color: #1E88E5;
+    border-radius: 4px;
+    color: #BBDEFB;
+    text-decoration: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .navlink p {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar i {
+    display: none;
+  }
+
+
+  .navlink:hover {
+    transition: .3s color;
+    color: #FAFAFA;
+  }
+
+  .title {
+    position: absolute;
+    margin: 0px;
+    margin-top: 8px;
+    padding: 0px;
+    left: 14%;
+  }
+
+
+  .searchForms {
+    width: 100%;
+    /*display: inline-block;*/
+    margin-left: 24%;
+  }
+
+
+
+  .searchForm h1 {
+    margin-left: 15px;
+  }
+
+  .results {
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  .results h1 {
+    font-family: 'Spectral SC', serif;
+  }
+
+  .results p {
+    color: green;
+    font-size: 20px;
+  }
+
+  .fa {
+    padding-left: 20px;
+    cursor: pointer;
+    color: #1E88E5;
+  }
+
+  .days {
+    font-family: 'Spectral SC', serif;
+  }
+
+  .container {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+  }
+
+  .container .left {
+    margin-top: 30px;
+    border-right: 2px solid #e3e3e3;
+  }
+
+  .container .right {
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .container > div {
+    flex: 1;
+  }
+
+  .right ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .right ul li:hover {
+    color: #9E9E9E;
+  }
+
+  .activeDay {
+    color: #9E9E9E;
+  }
+
+
+  .totals p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .calcValues {
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .currentDay {
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1E88E5;
+  }
+
+
+}
 
 
 
 
+/* MOBILE */
 
+@media only screen and (max-width: 1600px) {
+  .title {
+    display: none;
+    color: green !important;
+  }
+}
+
+@media only screen and (max-width: 1281px) {
+
+  .searchForms {
+    width: 1280px;
+    margin-left: 0px;
+    padding-left: 200px;
+  }
+
+  #wrap {
+    width: 430px !important;
+  }
+
+  #broke {
+    width: 430px;
+  }
+
+  .navbar {
+    width: 1280px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .title {
+      display: none;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #1E88E5;
+      width: 100%;
+      list-style: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .navlink {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 8px;
+      text-decoration: none;
+      border-radius: 4px;
+      color: #BBDEFB;
+      background-color: #1E88E5;
+    }
+
+    .navlink:nth-child(n+3) {
+      margin-top: 6px;
+      margin-left: 5px;
+    }
+
+    .navlink:nth-child(2) {
+
+    }
+
+    .navlink p {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .navbar i {
+      color: white;
+    }
+
+    .facebook p i {
+      padding-right: 6px;
+    }
+
+    /* My List Component */
+
+    .searchForms {
+      width: 370px;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    div #wrap {
+      max-width: 365px;
+    }
+
+    #wrap {
+      width: 350px;
+      margin-left: 5px;
+      /*padding: 0 auto;*/
+    }
+
+    .results {
+      margin-left: 20px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .container .left h1 {
+      font-size: 18px;
+    }
+
+    .container .left {
+      margin: 0px;
+      padding: 0px;
+      border-right: 2px solid #e3e3e3;
+    }
+
+    .container .right {
+      margin-left: 13px;
+    }
+
+    .days {
+      margin: 0px;
+      margin-top: 10px;
+      padding: 0px;
+    }
+
+    .right ul li{
+      display: inline-block;
+      padding: 0px 10px;
+      margin: 0px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+
+
+    .calcValues {
+      display: block;
+    }
+
+
+
+
+  }
+
+
+
+/*
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .left {
+  margin-top: 30px;
+  border-right: 2px solid #e3e3e3;
+}
+
+.container .right {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.container > div {
+  flex: 1;
+}
+*/
 
 
 
