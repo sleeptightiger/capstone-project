@@ -432,7 +432,7 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
   .fa {
     padding-left: 20px;
     cursor: pointer;
-    color: green;
+    color: #1E88E5;
   }
 
   .days {

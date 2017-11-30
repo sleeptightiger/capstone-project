@@ -11,9 +11,10 @@ class MyList extends Component {
 
     this.state = {
       data: null,
-      day: null || this.props.currentDay
+      day: null || this.props.currentDay,
     }
 
+    this._deleteItem = this._deleteItem.bind(this);
   }
 
 
@@ -62,6 +63,7 @@ class MyList extends Component {
           })
       })
     })
+
   }
 
 
@@ -102,15 +104,26 @@ class MyList extends Component {
   }
 
 
+  _deleteItem(e) {
+    let foodName = e.target.parentNode.parentNode.childNodes[0].innerText;
+    let data = this.state.data;
+    data.forEach((id, i) => {
+      axios.get(`/api/deleteItem/${data[i]._id}/${foodName}`)
+      .then((res) => {
+        console.log(res);
+      })
+    })
+
+
+  }
+
+
 
 
 
 
   render() {
 
-    // setTimeout(() => {
-    //   this._addListener();
-    // }, 1500)
 
     let calculatedMacros = this._calculateMacros();
 
@@ -123,7 +136,7 @@ class MyList extends Component {
 
         return (
           <div key={i} className="results">
-            <h1>{_.startCase(nutInfo.name)}</h1>
+            <h1>{_.startCase(nutInfo.name)}<i onClick={this._deleteItem} className="fa fa-minus" aria-hidden="true"></i></h1>
             <p>Serving Size: {nutInfo.servingSize} {nutInfo.unit}</p>
             <p>Calories: {Math.ceil(nutInfo.calories) || 0}</p>
             <p>Protein: {Math.ceil(nutInfo.protein)|| 0} g</p>

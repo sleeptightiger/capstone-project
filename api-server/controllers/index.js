@@ -171,6 +171,22 @@ app.get('/twilio/:num', (req, res) => {
 })
 
 
+app.get('/deleteItem/:id/:name', (req, res) => {
+  let id = req.params.id;
+  let name = req.params.name;
+
+  db.Food.findOneAndRemove({
+    '_id': id,
+    'name': name
+  })
+  .then((res) => {
+    res.json(res);
+  })
+  .catch((err) => {
+    new Error('Error Deleting item', err);
+  })
+})
+
 
 
 
