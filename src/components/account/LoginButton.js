@@ -19,7 +19,7 @@ class LoginButton extends Component {
   _handleFacebook(e) {
     e.preventDefault();
     const provider = new firebase.auth.FacebookAuthProvider();
-    auth.signInWithPopup(provider);
+    auth.signInWithRedirect(provider);
   }
 
   render() {
