@@ -105,6 +105,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+        <div id="footer"><p>Made By <a href="https://github.com/mattray0295" target="_blank">Matt Ray</a></p></div>
       </div>
     );
   }

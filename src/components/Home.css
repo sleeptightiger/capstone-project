@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:800');
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
 
 .home {
@@ -14,11 +15,25 @@
 
 
 
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   background:#1E88E5;
+}
 
+#footer p {
+  font-family: 'Bitter', serif;
+  text-align: center;
+  margin-top: 10px;
+  color: #FAFAFA;
+}
 
-
-
-
+#footer a {
+  color: #1A237E;
+}
 
 
 
@@ -376,6 +391,10 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
   .title .fa {
     color: #1A237E;
     padding-right: 10px;
+  }
+
+  .facebook .fa {
+    display: none;
   }
 
   .home h1 {

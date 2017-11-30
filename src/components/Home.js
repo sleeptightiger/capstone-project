@@ -67,6 +67,8 @@ class Home extends Component {
               <input type="submit" id="log-in" name="log-in" value="Submit" />
             </p>
           </form>
+          <div id="footer">
+          </div>
       </div>
     );
   }
