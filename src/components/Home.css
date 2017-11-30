@@ -311,7 +311,7 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
 /* MEDIA QUERIES */
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-device-width: 700px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -474,8 +474,8 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
 }
 
 @media only screen
-  and (min-width: 700)
-  and (max-width: 1281px) {
+  and (min-device-width: 700)
+  and (max-device-width: 1281px) {
 
   .searchForms {
     width: 1280px;
