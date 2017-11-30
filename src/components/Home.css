@@ -591,22 +591,21 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
     }
 
     .days {
+      font-family: 'Spectral SC', serif;
       margin: 0px;
       margin-top: 10px;
       padding: 0px;
+
     }
 
     .right ul li{
       display: inline-block;
-      padding: 0px 10px;
+      padding: 3px 10px;
       margin: 0px;
       font-size: 15px;
       cursor: pointer;
     }
 
-    .days {
-      font-family: 'Spectral SC', serif;
-    }
 
     .results h1 {
       font-family: 'Spectral SC', serif;
