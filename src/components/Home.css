@@ -609,8 +609,14 @@ body #wrap .form input[type="text"]:focus::-webkit-input-placeholder {
     }
 
     .results h1 {
-    font-family: 'Spectral SC', serif;
-  }
+      font-family: 'Spectral SC', serif;
+    }
+
+    .fa {
+      padding-left: 20px;
+      cursor: pointer;
+      color: #1E88E5;
+    }
 
 
 

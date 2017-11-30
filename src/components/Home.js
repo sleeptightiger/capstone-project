@@ -7,7 +7,7 @@ class Home extends Component {
     super(props);
 
     this.state = {
-
+      thankYou: 'Enter your phone number to get fitness updates'
 
     }
 
@@ -33,6 +33,9 @@ class Home extends Component {
         console.log('SMS sent successfully.');
       })
       this.phoneNumber.value = ''
+      this.setState({
+        thankYou: 'Thank you! You should be receiving a text soon!'
+      })
     })
     .catch((err) => {
       new Error('error', err);
@@ -51,7 +54,7 @@ class Home extends Component {
 
     return (
       <div className="home">
-        <h1>Enter your phone number to get fitness updates</h1>
+        <h1>{this.state.thankYou}</h1>
         <form onSubmit={this._getPhoneNumber} className="numform">
           <div id="input_wrapper">
             <p>
