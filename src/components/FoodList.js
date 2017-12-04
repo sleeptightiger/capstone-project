@@ -44,8 +44,6 @@ class FoodList extends Component {
       fetch(`/api/${fetchUrl}`)
       .then((res) => res.json())
       .then((data) => {
-        // console.log('Data', data)
-        // this._getNutritionInfoId(data.branded)
         this.setState({
           food: data
         })
@@ -60,6 +58,7 @@ class FoodList extends Component {
           })
         })
     }
+    this.searchBox.value = '';
 
   }
 
@@ -74,6 +73,8 @@ class FoodList extends Component {
         food: res.data.foods
       })
     })
+
+    this.naturalSearch.value = '';
 
 
   }
